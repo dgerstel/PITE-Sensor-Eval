@@ -1,0 +1,1179 @@
+# setting LC_ALL to "C"
+# --> Including file '/calib/velo/dqm/Vetra_HEAD/Tell1/Vetra/options/Velo/Vetra-Default-ZS_ClustersOnly.py'
+# <-- End of file '/calib/velo/dqm/Vetra_HEAD/Tell1/Vetra/options/Velo/Vetra-Default-ZS_ClustersOnly.py'
+# --> Including file '/calib/velo/dqm/Vetra_HEAD/Tell1/Vetra/options/Velo/VeloDQBeam.py'
+# <-- End of file '/calib/velo/dqm/Vetra_HEAD/Tell1/Vetra/options/Velo/VeloDQBeam.py'
+# --> Including file '/calib/velo/dqm/VeloView/VetraOutput/jobdir/VELODQM_165527_2015-10-12_18.55.29_Clusters.data.py'
+# <-- End of file '/calib/velo/dqm/VeloView/VetraOutput/jobdir/VELODQM_165527_2015-10-12_18.55.29_Clusters.data.py'
+# WARNING: file '/calib/velo/dqm/Vetra_HEAD/Tell1/Vetra/options/Velo/VeloDQBeam.py' already included, ignored.
+# skipping configuration of RawEventFormatConf
+# applying configuration of Vetra
+# --> Including file '/cvmfs/lhcb.cern.ch/lib/lhcb/LHCB/LHCB_v39r0/GaudiConf/options/RootHist.opts'
+# ApplicationMgr.HistogramPersistency = "ROOT";
+# <-- End of file '/cvmfs/lhcb.cern.ch/lib/lhcb/LHCB/LHCB_v39r0/GaudiConf/options/RootHist.opts'
+# Histos file will be `` VELODQM_165527_2015-10-12_18.55.29_Clusters.root ''
+# Tuple will be in `` Vetra_tuple.root ''
+# /***** User Vetra/Vetra ****************************************************************************
+# |-EmuConvLimit        = 0
+# |-ExpertMoni          = False
+# |-TupleFile           = 'Vetra_tuple.root'
+# |-SkipEvents          = 0  (default: 0)
+# |-VELOCONDtag         = 'HEAD'
+# |-EmuMode             = 'Dynamic'
+# |-PileUp              = False
+# |-BitPerfectness      = False
+# |-ParaTraining        = False
+# |-DDDBtag             = ''
+# |-MainSequence        = ['GaudiSequencer/Init', <LoKi::ODINFilter/FilterBeamBeam at 0x7f7b07a2c230>, 'ProcessPhase/TELL1Processing', 'ProcessPhase/Reco', 'ProcessPhase/Moni', 'ProcessPhase/Output']
+# |                     (default: ['ProcessPhase/TELL1Processing', 'ProcessPhase/Reco', 'ProcessPhase/Moni', 'ProcessPhase/Output'])
+# |-OutputType          = 'NONE'
+# |-TEDTracks           = False
+# |-CheckEBs            = True
+# |-UseOracle           = False
+# |-MagnetOn            = True
+# |-DBSnapshotDirectory = '/group/online/hlt/conditions'
+# |-OutputLevel         = 3
+# |-EvtMax              = 20000  (default: -1)
+# |-Simulation          = False
+# |-Context             = 'Offline'
+# |-CondDBtag           = ''
+# |-PartitionName       = 'LHCb'
+# |-MoniDataFilter      = 'NONE'
+# |-FilterBeamBeam      = True  (default: False)
+# |-UseDBSnapshot       = False
+# |-DataType            = '2012'
+# |-RunEmulation        = False
+# |-DataBanks           = 'Clusters'  (default: 'NZS+ZS')
+# |-HistogramFile       = 'VELODQM_165527_2015-10-12_18.55.29_Clusters.root'  (default: 'Vetra_histos.root')
+# |-CheckTAEs           = False
+# \----- (End of User Vetra/Vetra) -------------------------------------------------------------------
+# applying configuration of VELOCONDConf
+# WARNING: Using default tag HEAD for partition VELOCOND
+# /***** User VELOCONDConf/VELOCONDConf **************************************************************
+# |-VELOCONDtag = 'HEAD'
+# \----- (End of User VELOCONDConf/VELOCONDConf) -----------------------------------------------------
+# applying configuration of VetraOutputConf
+# /***** User VetraOutputConf/VetraOutputConf ********************************************************
+# |-Sequence    = []  (default: [])
+# |-RequireAlgs = []  (default: [])
+# |-OutputType  = 'NONE'
+# |-Context     = 'Offline'
+# |-Filename    = 'Vetra'
+# \----- (End of User VetraOutputConf/VetraOutputConf) -----------------------------------------------
+# applying configuration of LHCbApp
+# /***** User LHCbApp/LHCbApp ************************************************************************
+# |-Persistency    = None
+# |-DataType       = '2012'
+# |-DDDBtag        = ''
+# |-SkipEvents     = 0  (default: 0)
+# |-XMLSummary     = None
+# |-OutputLevel    = 3
+# |-EvtMax         = 20000  (default: -1)
+# |-Simulation     = False
+# |-DQFLAGStag     = ''
+# |-IgnoreDQFlags  = True
+# |-Detectors      = []  (default: [])
+# |-LocalDataTypes = []  (default: [])
+# |-TimeStamp      = False
+# |-CondDBtag      = ''
+# |-Monitors       = []  (default: [])
+# \----- (End of User LHCbApp/LHCbApp) ---------------------------------------------------------------
+# applying configuration of VetraRecoConf
+# /***** User VetraRecoConf/VetraRecoConf ************************************************************
+# |-TrackPatRecAlgorithms = ['FastVelo']  (default: ['FastVelo'])
+# |-Sequence              = ['VELO', 'Tr', 'Vertex']  (default: ['VELO', 'Tr', 'Vertex'])
+# |-DataType              = '2012'
+# |-OutputLevel           = 3
+# |-DataBanks             = 'Clusters'  (default: '')
+# |-OutputType            = 'NONE'
+# |-Context               = 'Offline'
+# |-SpecialData           = []  (default: [])
+# \----- (End of User VetraRecoConf/VetraRecoConf) ---------------------------------------------------
+# skipping configuration of XMLSummary
+# skipping configuration of VetraTELL1ParaTrainingConf
+# applying configuration of DDDBConf
+# WARNING: Using default tag dddb-20150522-2 for partition DDDB
+# WARNING: Using default tag cond-20150409-1 for partition LHCBCOND
+# WARNING: Using default tag dq-20140822 for partition DQFLAGS
+# /***** User DDDBConf/DDDBConf **********************************************************************
+# |-DataType    = '2012'
+# |-DbRoot      = 'conddb:/lhcb.xml'
+# |-InitialTime = 'Safe'
+# |-AutoTags    = False
+# |-Simulation  = False
+# \----- (End of User DDDBConf/DDDBConf) -------------------------------------------------------------
+# applying configuration of VetraMoniConf
+# --> Including file '/calib/velo/dqm/Vetra_HEAD/Tell1/Vetra/options/Velo/VetraMoni_Odin.py'
+# <-- End of file '/calib/velo/dqm/Vetra_HEAD/Tell1/Vetra/options/Velo/VetraMoni_Odin.py'
+# --> Including file '/calib/velo/dqm/Vetra_HEAD/Tell1/Vetra/options/Velo/VetraMoni_Clusters.py'
+# <-- End of file '/calib/velo/dqm/Vetra_HEAD/Tell1/Vetra/options/Velo/VetraMoni_Clusters.py'
+# --> Including file '/calib/velo/dqm/Vetra_HEAD/Tell1/Vetra/options/Velo/VetraMoni_EB.py'
+# <-- End of file '/calib/velo/dqm/Vetra_HEAD/Tell1/Vetra/options/Velo/VetraMoni_EB.py'
+# /***** User VetraMoniConf/VetraMoniConf ************************************************************
+# |-PrintOdin      = True
+# |-BitPerfectness = False
+# |-CheckDelayscan = False
+# |-PlotRawData    = False
+# |-Sequence       = ['VELO']  (default: ['VELO'])
+# |-DataBanks      = 'Clusters'  (default: 'NZS+ZS')
+# |-CheckEBs       = True
+# |-Context        = 'Offline'
+# |-PileUp         = False
+# |-CheckTAEs      = False
+# \----- (End of User VetraMoniConf/VetraMoniConf) ---------------------------------------------------
+# applying configuration of VetraTELL1ProcessingConf
+# --> Including file '/calib/velo/dqm/Vetra_HEAD/Tell1/Vetra/options/Velo/VetraDecoding_ZS.py'
+# <-- End of file '/calib/velo/dqm/Vetra_HEAD/Tell1/Vetra/options/Velo/VetraDecoding_ZS.py'
+# --> Including file '/calib/velo/dqm/Vetra_HEAD/Tell1/Vetra/options/Velo/VetraDecoding_EB.py'
+# <-- End of file '/calib/velo/dqm/Vetra_HEAD/Tell1/Vetra/options/Velo/VetraDecoding_EB.py'
+# --> Including file '/calib/velo/dqm/Vetra_HEAD/Tell1/Vetra/options/Velo/VeloCondDB.py'
+# <-- End of file '/calib/velo/dqm/Vetra_HEAD/Tell1/Vetra/options/Velo/VeloCondDB.py'
+# /***** User VetraTELL1ProcessingConf/VetraTELL1ProcessingConf **************************************
+# |-BitPerfectness = False
+# |-Sequence       = ['VELO']  (default: ['VELO'])
+# |-RunEmulation   = False
+# |-DataBanks      = 'Clusters'  (default: 'NZS+ZS')
+# |-CheckEBs       = True
+# |-EmuMode        = 'Dynamic'
+# |-Context        = 'Offline'
+# |-PileUp         = False
+# |-CheckTAEs      = False
+# \----- (End of User VetraTELL1ProcessingConf/VetraTELL1ProcessingConf) -----------------------------
+# applying configuration of RecSysConf
+# /***** User RecSysConf/RecSysConf ******************************************************************
+# |-SkipTracking = False
+# |-DataType     = '2012'
+# |-OutputLevel  = 3
+# |-Histograms   = 'OfflineFull'
+# |-Detectors    = ['Velo', 'TT', 'IT', 'OT', 'Rich', 'Tr', 'Calo', 'Muon', 'L0']
+# |              (default: ['Velo', 'TT', 'IT', 'OT', 'Rich', 'Tr', 'Calo', 'Muon', 'L0'])
+# |-OutputType   = ''
+# |-Simulation   = False
+# |-Context      = 'Offline'
+# |-RecoSequence = ['VELO', 'Tr', 'Vertex']  (default: None)
+# |-SpecialData  = []  (default: [])
+# |-OnlineMode   = False
+# \----- (End of User RecSysConf/RecSysConf) ---------------------------------------------------------
+# applying configuration of TrackSys
+# /***** User TrackSys/TrackSys **********************************************************************
+# |-FilterBeforeFit          = True
+# |-GlobalCuts               = {'Velo': 6000, 'OT': 15000, 'IT': 999999}  (default: {})
+# |-TrackPatRecAlgorithms    = ['FastVelo']  (default: ['FastVelo'])
+# |-ExpertHistos             = False  (default: False)
+# |-TrackExtraInfoAlgorithms = ['CloneFlagging', 'TrackLikelihood', 'GhostProbability']  (default: [])
+# |-DataType                 = '2011'
+# |-ForceOldSeq              = False
+# |-TrackTypes               = ['Velo', 'Upstream', 'Forward', 'Seeding', 'Match', 'Downstream']  (default: [])
+# |-OutputType               = ''
+# |-Simulation               = False
+# |-OldCloneKiller           = False
+# |-ForceNewSeq              = False
+# |-SpecialData              = []  (default: [])
+# |-WithMC                   = False
+# |-ExpertTracking           = []  (default: [])
+# \----- (End of User TrackSys/TrackSys) -------------------------------------------------------------
+# applying configuration of CondDB
+# --> Including file '/cvmfs/lhcb.cern.ch/lib/lhcb/DBASE/Det/SQLDDDB/v7r10/options/SQLDDDB.py'
+# <-- End of file '/cvmfs/lhcb.cern.ch/lib/lhcb/DBASE/Det/SQLDDDB/v7r10/options/SQLDDDB.py'
+# /***** User CondDB/CondDB **************************************************************************
+# |-Upgrade                    = False
+# |-EnableRunStampCheck        = True
+# |-DBSnapshotDirectory        = '/group/online/hlt/conditions'
+# |-LatestLocalTagsByDataType  = []  (default: [])
+# |-Online                     = False
+# |-LogFile                    = ''
+# |-SQLiteLocalCopiesDir       = ''
+# |-EnableRunChangeHandler     = False
+# |-RunChangeHandlerConditions = {'online_%d.xml': ['Conditions/Online/LHCb/Magnet/Set', 'Conditions/Online/Velo/MotionSystem', 'Conditions/Online/LHCb/Lumi/LumiSettings', 'Conditions/Online/LHCb/LHCFillingScheme', 'Conditions/Online/LHCb/RunParameters', 'Conditions/Online/Rich1/R1HltGasParameters', 'Conditions/Online/Rich2/R2HltGasParameters']}
+# |                            (default: {'online_%d.xml': ['Conditions/Online/LHCb/Magnet/Set', 'Conditions/Online/Velo/MotionSystem', 'Conditions/Online/LHCb/Lumi/LumiSettings', 'Conditions/Online/LHCb/LHCFillingScheme', 'Conditions/Online/LHCb/RunParameters', 'Conditions/Online/Rich1/R1HltGasParameters', 'Conditions/Online/Rich2/R2HltGasParameters']})
+# |-Tags                       = {}  (default: {})
+# |-LoadCALIBDB                = 'OFFLINE'
+# |-AllLocalTagsByDataType     = []  (default: [])
+# |-UseOracle                  = False
+# |-RunStampCondition          = ''
+# |-PartitionConnectionString  = {}  (default: {})
+# |-LocalTags                  = {}  (default: {})
+# |-IgnoreHeartBeat            = True  (default: False)
+# |-Overrides                  = [(0, <CondDBAccessSvc/VELOCOND at 0x7f7b06d8a8a0>)]  (default: [])
+# |-Simulation                 = False
+# |-QueryGranularity           = 0
+# |-LatestGlobalTagByDataType  = ''
+# |-UseDBSnapshot              = False
+# |-DisableLFC                 = False
+# |-HeartBeatCondition         = '/Conditions/Online/LHCb/Tick'
+# |-LatestGlobalTagByDataTypes = []  (default: [])
+# |-UseLatestTags              = []  (default: [])
+# |-OverwriteSQLiteLocalCopy   = False
+# \----- (End of User CondDB/CondDB) -----------------------------------------------------------------
+# skipping configuration of CaloProcessor
+# applying configuration of RichOfflineRec
+# WARNING: RICH Reconstruction Sequence not set. Will do nothing.
+# /***** User RichRecSysConf/RichOfflineRec **********************************************************
+# |-PreloadTracks           = False
+# |-RefitTracks             = False
+# |-InitTracks              = True
+# |-Particles               = None
+# |-InitPhotons             = True
+# |-TracklessRingAlgs       = ['ENN']  (default: ['ENN'])
+# |-MakeSummaryObjects      = False
+# |-CheckProcStatus         = True
+# |-OnlineMode              = False
+# |-TrackTypeGroups         = [['Forward', 'Match'], ['VeloTT'], ['KsTrack']]  (default: [])
+# |-OutputLevel             = 3
+# |-Simulation              = False
+# |-UseCaloMomentumTracks   = False
+# |-ConfigureTools          = True
+# |-ConfigureAlgs           = True
+# |-Context                 = 'Offline'
+# |-RichPIDLocation         = ''
+# |-ConfigurePrelims        = True
+# |-PidConfig               = 'FullGlobal'
+# |-PIDVersion              = 1
+# |-DataType                = ''
+# |-InitPixels              = True
+# |-Radiators               = None
+# |-InitDecoding            = True
+# |-PreloadRawEvent         = False
+# |-SpecialData             = []  (default: [])
+# |-HpdRandomBackgroundProb = -1.0
+# |-RecoSequencer           = None
+# \----- (End of User RichRecSysConf/RichOfflineRec) -------------------------------------------------
+# skipping configuration of RichOfflineRecLong
+# skipping configuration of RichOfflineRecLong_RichPixelCreatorConfig
+# skipping configuration of RichOfflineRecLong_RichTrackCreatorConfig
+# skipping configuration of RichOfflineRecKsTrack
+# skipping configuration of RichOfflineRec_RichGlobalPIDConfig
+# skipping configuration of CaloProcessor_CaloDigitConf
+# skipping configuration of RichOfflineRecLong_CKThetaResolutionConfig
+# skipping configuration of GlobalRecoConf
+# skipping configuration of RichOfflineRec_RichENNRingFinderConf
+# skipping configuration of RichOfflineRec_RichTrackCreatorConfig
+# skipping configuration of RichOfflineRec_RichPixelCreatorConfig
+# skipping configuration of RichOfflineRec_RichTrackCreatorConfig_RichSegmentCreatorConf
+# skipping configuration of RichOfflineRec_RichTemplateRingFinderConf
+# skipping configuration of RichOfflineRecKsTrack_CKThetaResolutionConfig
+# skipping configuration of RichOfflineRecLong_RichTemplateRingFinderConf
+# skipping configuration of RichOfflineRecKsTrack_RichTemplateRingFinderConf
+# skipping configuration of DecodeRawEvent
+# skipping configuration of RichOfflineRecKsTrack_RichENNRingFinderConf
+# skipping configuration of RichOfflineRecLong_RichENNRingFinderConf
+# skipping configuration of RichOfflineRecKsTrack_RichPhotonCreatorConfig
+# skipping configuration of RichOfflineRec_CKThetaResolutionConfig
+# skipping configuration of CaloProcessor_CaloPIDsConf
+# skipping configuration of RichOfflineRec_RichPhotonCreatorConfig
+# skipping configuration of RichOfflineRecKsTrack_RichGlobalPIDConfig
+# skipping configuration of RichOfflineRecVeloTT
+# skipping configuration of RichOfflineRecLong_RichTrackCreatorConfig_RichSegmentCreatorConf
+# skipping configuration of RichOfflineRecKsTrack_RichPixelCreatorConfig
+# skipping configuration of RichOfflineRecLong_RichPhotonCreatorConfig
+# skipping configuration of RichOfflineRecVeloTT_RichPhotonCreatorConfig
+# skipping configuration of RichOfflineRecKsTrack_RichTrackCreatorConfig
+# skipping configuration of RichOfflineRecVeloTT_RichENNRingFinderConf
+# skipping configuration of RichOfflineRecLong_RichGlobalPIDConfig
+# skipping configuration of ChargedProtoANNPIDConf
+# skipping configuration of RichOfflineRecVeloTT_RichTemplateRingFinderConf
+# skipping configuration of RichOfflineRecVeloTT_RichGlobalPIDConfig
+# skipping configuration of RichOfflineRecVeloTT_CKThetaResolutionConfig
+# skipping configuration of RichOfflineRecVeloTT_RichTrackCreatorConfig
+# skipping configuration of RichOfflineRecVeloTT_RichPixelCreatorConfig
+# skipping configuration of RichOfflineRecKsTrack_RichTrackCreatorConfig_RichSegmentCreatorConf
+# skipping configuration of RichOfflineRecVeloTT_RichTrackCreatorConfig_RichSegmentCreatorConf
+ApplicationMgr    SUCCESS 
+====================================================================================================================================
+                                                   Welcome to Vetra version v16r0
+                                          running on plus01 on Mon Oct 12 18:55:47 2015
+====================================================================================================================================
+ApplicationMgr       INFO Application Manager Configured successfully
+DetectorPersist...   INFO Added successfully Conversion service:XmlCnvSvc
+DetectorDataSvc   SUCCESS Detector description database: conddb:/lhcb.xml
+NTupleSvc           DEBUG Service base class initialized successfully
+NTupleSvc         VERBOSE ServiceLocatorHelper::service: found service IncidentSvc
+NTupleSvc            INFO Added stream file:Vetra_tuple.root as FILE1
+RndmGenSvc.Engine    INFO Generator engine type:CLHEP::RanluxEngine
+RndmGenSvc.Engine    INFO Current Seed:1234567 Luxury:3
+RndmGenSvc           INFO Using Random engine:HepRndm::Engine<CLHEP::RanluxEngine>
+TIMER.TIMER          INFO This machine has a speed about   2.40 times the speed of a 2.8 GHz Xeon.
+TransportSvc         INFO Initialize the static pointer to DetDesc::IGeometryErrorSvc
+TransportSvc         INFO Recovery of geometry errors is  ENABLED
+VetraSequencer       INFO Member list: GaudiSequencer/Init, LoKi::ODINFilter/FilterBeamBeam, ProcessPhase/TELL1Processing, ProcessPhase/Reco, ProcessPhase/Moni, ProcessPhase/Output
+ToolSvc.Sequenc...   INFO This machine has a speed about   2.40 times the speed of a 2.8 GHz Xeon.
+Init                 INFO Member list: VetraInit, nzsStreamListener
+VetraInit         SUCCESS ==================================================================
+VetraInit         SUCCESS Requested to process 20000 events
+VetraInit         SUCCESS ==================================================================
+RootHistSvc          INFO Writing ROOT histograms to: VELODQM_165527_2015-10-12_18.55.29_Clusters.root
+HistogramPersis...   INFO Added successfully Conversion service:RootHistSvc
+LoKiSvc           SUCCESS 
+
+
+Welcome Welcome Welcome Welcome Welcome Welcome Welcome Welcome Welcome Welcome Welcome Welcome Welcome
+LoKi                                                                                               LoKi 
+LoKi                                                                                               LoKi 
+LoKi                                        Welcome to LoKi!                                       LoKi 
+LoKi                                                                                               LoKi 
+LoKi                                      (LOops & KInematics)                                     LoKi 
+LoKi                                                                                               LoKi 
+LoKi                         Smart & Friendly C++ Physics Analysis Tool Kit                        LoKi 
+LoKi                                                                                               LoKi 
+LoKi                                                                                               LoKi 
+LoKi                         Author:  Vanya BELYAEV Ivan.Belyaev@nikhef.nl                         LoKi 
+LoKi                     With the kind help of Galina Pakhlova & Sergey Barsuk                     LoKi 
+LoKi                                                                                               LoKi 
+LoKi                                       Have fun and enjoy!                                     LoKi 
+LoKi                                                                                               LoKi 
+Welcome Welcome Welcome Welcome Welcome Welcome Welcome Welcome Welcome Welcome Welcome Welcome Welcome
+Welcome Welcome Welcome Welcome Welcome Welcome Welcome Welcome Welcome Welcome Welcome Welcome Welcome
+
+
+
+TELL1Processing      INFO Member list: GaudiSequencer/TELL1ProcessingVELOSeq, with context 'Offline'
+TELL1Processing...   INFO Member list: GaudiSequencer/Decoding_ZS, GaudiSequencer/Decoding_EB, with context 'Offline'
+Decoding_ZS          INFO Member list: DecodeVeloRawBuffer/DecodeToVeloClusters, with context 'Offline'
+DecodeToVeloClu...   INFO Cancel processing of events with more than 10000 Velo clusters
+COOLConfSvc          INFO CORAL Connection Retrial Period set to 60s
+COOLConfSvc          INFO CORAL Connection Retrial Time-Out set to 900s
+VELOCOND             INFO Connected to database "sqlite_file:/calib/velo/dqm/Vetra_HEAD/Det/VeloSQLDDDB/db/VELOCOND.db/VELOCOND"
+VELOCOND             INFO Using TAG "HEAD"
+DDDB                 INFO Connected to database "sqlite_file:/cvmfs/lhcb.cern.ch/lib/lhcb/SQLite/SQLDDDB/db/DDDB.db/DDDB"
+DDDB                 INFO Using TAG "dddb-20150522-2"
+LHCBCOND             INFO Connected to database "sqlite_file:/cvmfs/lhcb.cern.ch/lib/lhcb/SQLite/SQLDDDB/db/LHCBCOND.db/LHCBCOND"
+LHCBCOND             INFO Using TAG "cond-20150409-1"
+ONLINE_2012          INFO Connected to database "sqlite_file:/cvmfs/lhcb.cern.ch/lib/lhcb/SQLite/SQLDDDB/db/ONLINE-2012.db/ONLINE"
+ONLINE_2012          INFO Using TAG ""
+Decoding_EB          INFO Member list: SmartVeloErrorBankDecoder, with context 'Offline'
+Reco                 INFO Member list: GaudiSequencer/RecoVELOSeq, GaudiSequencer/RecoTrSeq, GaudiSequencer/RecoVertexSeq, GaudiSequencer/RecoVELOSeq, GaudiSequencer/RecoTrSeq, GaudiSequencer/RecoVertexSeq, with context 'Offline'
+RecoVELOSeq          INFO Member list: FastVeloTracking, with context 'Offline'
+RecoTrSeq            INFO Member list: ProcessPhase/Track, with context 'Offline'
+Track                INFO Member list: GaudiSequencer/TrackFitSeq, GaudiSequencer/TrackAddExtraInfoSeq, GaudiSequencer/TrackEraseExtraInformationSeq, with context 'Offline'
+TrackFitSeq          INFO Member list: TrackBestTrackCreator, with context 'Offline'
+ToolSvc.OTRawBa...   INFO  countsPerBX = 64 numberOfBX  = 3 timePerBX = 25 ForceBankVersion = 255 require window [-8,56], vetoing out of time hit pairs
+MagneticFieldSvc     INFO Opened magnetic field file : /cvmfs/lhcb.cern.ch/lib/lhcb/DBASE/FieldMap/v5r7/cdf/field101.c1.down.cdf
+MagneticFieldSvc     INFO Opened magnetic field file : /cvmfs/lhcb.cern.ch/lib/lhcb/DBASE/FieldMap/v5r7/cdf/field101.c2.down.cdf
+MagneticFieldSvc     INFO Opened magnetic field file : /cvmfs/lhcb.cern.ch/lib/lhcb/DBASE/FieldMap/v5r7/cdf/field101.c3.down.cdf
+MagneticFieldSvc     INFO Opened magnetic field file : /cvmfs/lhcb.cern.ch/lib/lhcb/DBASE/FieldMap/v5r7/cdf/field101.c4.down.cdf
+MagneticFieldSvc     INFO Map scaled by factor 1 with polarity internally used: -1 signed relative current: -1
+ToolSvc.PatTTMa...   INFO Start generation of VeloTT Bdl LUTs
+ToolSvc.PatTTMa...   INFO Generation of VeloTT Bdl LUTs finished
+ToolSvc.PatTTMa...   INFO Start generation of VeloTT deflection LUTs
+ToolSvc.PatTTMa...   INFO Generation of VeloTT deflection LUTs finished
+ToolSvc.VeloClu...   INFO  --> Tool configured using the Cond DB 
+ToolSvc.STOffli...   INFO APE set to 0.197
+ToolSvc.STOffli...   INFO Error Vec 0.257 0.245 0.277 0.208 
+ToolSvc.ITClust...   INFO APE set to 0.0758
+ToolSvc.ITClust...   INFO Error Vec 0.253 0.236 0.273 0.185 
+TrackAddExtraIn...   INFO Member list: GaudiSequencer/TrackClonesSeq, TrackAddLikelihood, TrackAddNNGhostId, with context 'Offline'
+TrackClonesSeq       INFO Member list: TrackBuildCloneTable/FindTrackClones, TrackCloneCleaner/FlagTrackClones, with context 'Offline'
+ToolSvc.TrackHe...   INFO ExtrapolatorID=5
+FindTrackClones      INFO Will build clone table for z=[0, 990, 9450]mm at 'Rec/Track/BestClones'
+FindTrackClones      INFO Max Kullbeck Liebler Distance = 5000
+TrackEraseExtra...   INFO Member list: TrackEraseExtraInfo, with context 'Offline'
+RecoVertexSeq        INFO Member list: PatPVOffline, TrackV0Finder, with context 'Offline'
+Moni                 INFO Member list: GaudiSequencer/MoniVELOSeq, with context 'Offline'
+MoniVELOSeq          INFO Member list: GaudiSequencer/Moni_Odin, GaudiSequencer/Moni_Clusters, GaudiSequencer/Moni_EB, with context 'Offline'
+Moni_Odin            INFO Member list: PrintODINBank, with context 'Offline'
+Moni_Clusters        INFO Member list: Velo::VeloClusterMonitor/VeloPrivateClusterMonitor, with context 'Offline'
+PCNErrorMon          INFO Pile-up modules will be skipped.
+Moni_EB              INFO Member list: Velo::Monitoring::ErrorMon/ErrorMon, Velo::Monitoring::PCNErrorMon/PCNErrorMon, with context 'Offline'
+ErrorMon          SUCCESS List of ALL properties of Velo::Monitoring::ErrorMon/ErrorMon  #properties = 53
+ErrorMon          SUCCESS Property ['Name': Value] =  'TELL1s':[  ]
+ErrorMon          SUCCESS Property ['Name': Value] =  'DebugMode':False
+ErrorMon          SUCCESS Property ['Name': Value] =  'ErrorsPerTell1PubRate':10000000
+ErrorMon          SUCCESS Property ['Name': Value] =  'EventsPerTell1PubRate':10000000
+ErrorMon          SUCCESS Property ['Name': Value] =  'ErrorBankLocation':Raw/Velo/VeloErrorBank
+ErrorMon          SUCCESS Property ['Name': Value] =  'RawEventLocation':DAQ/RawEvent
+ErrorMon          SUCCESS Property ['Name': Value] =  'AutoStringIDPurgeMap':{ '/' : '=SLASH=' }
+ErrorMon          SUCCESS Property ['Name': Value] =  'UseSequencialNumericAutoIDs':False
+ErrorMon          SUCCESS Property ['Name': Value] =  'HeaderFor1DHistoTable':|   Title                                       |    #    |     Mean   |    RMS     |  Skewness  |  Kurtosis  |
+ErrorMon          SUCCESS Property ['Name': Value] =  'ShortFormatFor1DHistoTable': | %1$-25.25s %2%
+ErrorMon          SUCCESS Property ['Name': Value] =  'FormatFor1DHistoTable':| %2$-45.45s | %3$=7d |%8$11.5g | %10$-11.5g|%12$11.5g |%14$11.5g |
+ErrorMon          SUCCESS Property ['Name': Value] =  'MonitorHistograms':True
+ErrorMon          SUCCESS Property ['Name': Value] =  'FullDetail':False
+ErrorMon          SUCCESS Property ['Name': Value] =  'HistoDir':ErrorMon
+ErrorMon          SUCCESS Property ['Name': Value] =  'HistoTopDir':Velo/
+ErrorMon          SUCCESS Property ['Name': Value] =  'HistoOffSet':0
+ErrorMon          SUCCESS Property ['Name': Value] =  'HistoSplitDir':False
+ErrorMon          SUCCESS Property ['Name': Value] =  'HistoCheckForNaN':True
+ErrorMon          SUCCESS Property ['Name': Value] =  'HistoCountersPrint':True
+ErrorMon          SUCCESS Property ['Name': Value] =  'HistoPrint':False
+ErrorMon          SUCCESS Property ['Name': Value] =  'HistoProduce':True
+ErrorMon          SUCCESS Property ['Name': Value] =  'RequireObjects':[  ]
+ErrorMon          SUCCESS Property ['Name': Value] =  'VetoObjects':[  ]
+ErrorMon          SUCCESS Property ['Name': Value] =  'StatEntityList':[  ]
+ErrorMon          SUCCESS Property ['Name': Value] =  'CounterList':[ '.*' ]
+ErrorMon          SUCCESS Property ['Name': Value] =  'UseEfficiencyRowFormat':True
+ErrorMon          SUCCESS Property ['Name': Value] =  'EfficiencyRowFormat': |*%|-48.48s|%|50t||%|10d| |%|11.5g| |(%|#9.6g| +- %|-#9.6g|)%%|   -------   |   -------   |
+ErrorMon          SUCCESS Property ['Name': Value] =  'RegularRowFormat': | %|-48.48s|%|50t||%|10d| |%|11.7g| |%|#11.5g| |%|#11.5g| |%|#12.5g| |%|#12.5g| |
+ErrorMon          SUCCESS Property ['Name': Value] =  'StatTableHeader': |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ErrorMon          SUCCESS Property ['Name': Value] =  'GlobalTimeOffset':0.0000000
+ErrorMon          SUCCESS Property ['Name': Value] =  'RootOnTES':
+ErrorMon          SUCCESS Property ['Name': Value] =  'RootInTES':
+ErrorMon          SUCCESS Property ['Name': Value] =  'Context':Offline
+ErrorMon          SUCCESS Property ['Name': Value] =  'TypePrint':True
+ErrorMon          SUCCESS Property ['Name': Value] =  'StatPrint':True
+ErrorMon          SUCCESS Property ['Name': Value] =  'PropertiesPrint':True
+ErrorMon          SUCCESS Property ['Name': Value] =  'ErrorsPrint':True
+ErrorMon          SUCCESS Property ['Name': Value] =  'RegisterForContextService':True
+ErrorMon          SUCCESS Property ['Name': Value] =  'MonitorService':MonitorSvc
+ErrorMon          SUCCESS Property ['Name': Value] =  'AuditStop':True
+ErrorMon          SUCCESS Property ['Name': Value] =  'AuditStart':True
+ErrorMon          SUCCESS Property ['Name': Value] =  'AuditEndRun':True
+ErrorMon          SUCCESS Property ['Name': Value] =  'AuditBeginRun':True
+ErrorMon          SUCCESS Property ['Name': Value] =  'AuditFinalize':True
+ErrorMon          SUCCESS Property ['Name': Value] =  'AuditExecute':True
+ErrorMon          SUCCESS Property ['Name': Value] =  'AuditRestart':True
+ErrorMon          SUCCESS Property ['Name': Value] =  'AuditReinitialize':True
+ErrorMon          SUCCESS Property ['Name': Value] =  'AuditInitialize':True
+ErrorMon          SUCCESS Property ['Name': Value] =  'AuditAlgorithms':True
+ErrorMon          SUCCESS Property ['Name': Value] =  'ErrorCounter':0
+ErrorMon          SUCCESS Property ['Name': Value] =  'ErrorMax':1
+ErrorMon          SUCCESS Property ['Name': Value] =  'Enable':True
+ErrorMon          SUCCESS Property ['Name': Value] =  'OutputLevel':3
+ErrorMon          SUCCESS List of ALL properties of Velo::Monitoring::ErrorMon/ErrorMon  #properties = 53
+ErrorMon          SUCCESS Property ['Name': Value] =  'TELL1s':[  ]
+ErrorMon          SUCCESS Property ['Name': Value] =  'DebugMode':False
+ErrorMon          SUCCESS Property ['Name': Value] =  'ErrorsPerTell1PubRate':10000000
+ErrorMon          SUCCESS Property ['Name': Value] =  'EventsPerTell1PubRate':10000000
+ErrorMon          SUCCESS Property ['Name': Value] =  'ErrorBankLocation':Raw/Velo/VeloErrorBank
+ErrorMon          SUCCESS Property ['Name': Value] =  'RawEventLocation':DAQ/RawEvent
+ErrorMon          SUCCESS Property ['Name': Value] =  'AutoStringIDPurgeMap':{ '/' : '=SLASH=' }
+ErrorMon          SUCCESS Property ['Name': Value] =  'UseSequencialNumericAutoIDs':False
+ErrorMon          SUCCESS Property ['Name': Value] =  'HeaderFor1DHistoTable':|   Title                                       |    #    |     Mean   |    RMS     |  Skewness  |  Kurtosis  |
+ErrorMon          SUCCESS Property ['Name': Value] =  'ShortFormatFor1DHistoTable': | %1$-25.25s %2%
+ErrorMon          SUCCESS Property ['Name': Value] =  'FormatFor1DHistoTable':| %2$-45.45s | %3$=7d |%8$11.5g | %10$-11.5g|%12$11.5g |%14$11.5g |
+ErrorMon          SUCCESS Property ['Name': Value] =  'MonitorHistograms':True
+ErrorMon          SUCCESS Property ['Name': Value] =  'FullDetail':False
+ErrorMon          SUCCESS Property ['Name': Value] =  'HistoDir':ErrorMon
+ErrorMon          SUCCESS Property ['Name': Value] =  'HistoTopDir':Velo/
+ErrorMon          SUCCESS Property ['Name': Value] =  'HistoOffSet':0
+ErrorMon          SUCCESS Property ['Name': Value] =  'HistoSplitDir':False
+ErrorMon          SUCCESS Property ['Name': Value] =  'HistoCheckForNaN':True
+ErrorMon          SUCCESS Property ['Name': Value] =  'HistoCountersPrint':True
+ErrorMon          SUCCESS Property ['Name': Value] =  'HistoPrint':False
+ErrorMon          SUCCESS Property ['Name': Value] =  'HistoProduce':True
+ErrorMon          SUCCESS Property ['Name': Value] =  'RequireObjects':[  ]
+ErrorMon          SUCCESS Property ['Name': Value] =  'VetoObjects':[  ]
+ErrorMon          SUCCESS Property ['Name': Value] =  'StatEntityList':[  ]
+ErrorMon          SUCCESS Property ['Name': Value] =  'CounterList':[ '.*' ]
+ErrorMon          SUCCESS Property ['Name': Value] =  'UseEfficiencyRowFormat':True
+ErrorMon          SUCCESS Property ['Name': Value] =  'EfficiencyRowFormat': |*%|-48.48s|%|50t||%|10d| |%|11.5g| |(%|#9.6g| +- %|-#9.6g|)%%|   -------   |   -------   |
+ErrorMon          SUCCESS Property ['Name': Value] =  'RegularRowFormat': | %|-48.48s|%|50t||%|10d| |%|11.7g| |%|#11.5g| |%|#11.5g| |%|#12.5g| |%|#12.5g| |
+ErrorMon          SUCCESS Property ['Name': Value] =  'StatTableHeader': |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ErrorMon          SUCCESS Property ['Name': Value] =  'GlobalTimeOffset':0.0000000
+ErrorMon          SUCCESS Property ['Name': Value] =  'RootOnTES':
+ErrorMon          SUCCESS Property ['Name': Value] =  'RootInTES':
+ErrorMon          SUCCESS Property ['Name': Value] =  'Context':Offline
+ErrorMon          SUCCESS Property ['Name': Value] =  'TypePrint':True
+ErrorMon          SUCCESS Property ['Name': Value] =  'StatPrint':True
+ErrorMon          SUCCESS Property ['Name': Value] =  'PropertiesPrint':True
+ErrorMon          SUCCESS Property ['Name': Value] =  'ErrorsPrint':True
+ErrorMon          SUCCESS Property ['Name': Value] =  'RegisterForContextService':True
+ErrorMon          SUCCESS Property ['Name': Value] =  'MonitorService':MonitorSvc
+ErrorMon          SUCCESS Property ['Name': Value] =  'AuditStop':True
+ErrorMon          SUCCESS Property ['Name': Value] =  'AuditStart':True
+ErrorMon          SUCCESS Property ['Name': Value] =  'AuditEndRun':True
+ErrorMon          SUCCESS Property ['Name': Value] =  'AuditBeginRun':True
+ErrorMon          SUCCESS Property ['Name': Value] =  'AuditFinalize':True
+ErrorMon          SUCCESS Property ['Name': Value] =  'AuditExecute':True
+ErrorMon          SUCCESS Property ['Name': Value] =  'AuditRestart':True
+ErrorMon          SUCCESS Property ['Name': Value] =  'AuditReinitialize':True
+ErrorMon          SUCCESS Property ['Name': Value] =  'AuditInitialize':True
+ErrorMon          SUCCESS Property ['Name': Value] =  'AuditAlgorithms':True
+ErrorMon          SUCCESS Property ['Name': Value] =  'ErrorCounter':0
+ErrorMon          SUCCESS Property ['Name': Value] =  'ErrorMax':1
+ErrorMon          SUCCESS Property ['Name': Value] =  'Enable':True
+ErrorMon          SUCCESS Property ['Name': Value] =  'OutputLevel':3
+PCNErrorMon       SUCCESS List of ALL properties of Velo::Monitoring::PCNErrorMon/PCNErrorMon  #properties = 52
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'doLog':True
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'excludePileup':True
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'TELL1s':[  ]
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'ErrorBankLocation':Raw/Velo/VeloErrorBank
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'RawEventLocation':DAQ/RawEvent
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'AutoStringIDPurgeMap':{ '/' : '=SLASH=' }
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'UseSequencialNumericAutoIDs':False
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'HeaderFor1DHistoTable':|   Title                                       |    #    |     Mean   |    RMS     |  Skewness  |  Kurtosis  |
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'ShortFormatFor1DHistoTable': | %1$-25.25s %2%
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'FormatFor1DHistoTable':| %2$-45.45s | %3$=7d |%8$11.5g | %10$-11.5g|%12$11.5g |%14$11.5g |
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'MonitorHistograms':True
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'FullDetail':False
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'HistoDir':PCNErrorMon
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'HistoTopDir':Velo/
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'HistoOffSet':0
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'HistoSplitDir':False
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'HistoCheckForNaN':True
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'HistoCountersPrint':True
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'HistoPrint':False
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'HistoProduce':True
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'RequireObjects':[  ]
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'VetoObjects':[  ]
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'StatEntityList':[  ]
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'CounterList':[ '.*' ]
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'UseEfficiencyRowFormat':True
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'EfficiencyRowFormat': |*%|-48.48s|%|50t||%|10d| |%|11.5g| |(%|#9.6g| +- %|-#9.6g|)%%|   -------   |   -------   |
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'RegularRowFormat': | %|-48.48s|%|50t||%|10d| |%|11.7g| |%|#11.5g| |%|#11.5g| |%|#12.5g| |%|#12.5g| |
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'StatTableHeader': |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'GlobalTimeOffset':0.0000000
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'RootOnTES':
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'RootInTES':
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'Context':Offline
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'TypePrint':True
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'StatPrint':True
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'PropertiesPrint':True
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'ErrorsPrint':True
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'RegisterForContextService':True
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'MonitorService':MonitorSvc
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'AuditStop':True
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'AuditStart':True
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'AuditEndRun':True
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'AuditBeginRun':True
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'AuditFinalize':True
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'AuditExecute':True
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'AuditRestart':True
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'AuditReinitialize':True
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'AuditInitialize':True
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'AuditAlgorithms':True
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'ErrorCounter':0
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'ErrorMax':1
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'Enable':True
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'OutputLevel':3
+PCNErrorMon       SUCCESS List of ALL properties of Velo::Monitoring::PCNErrorMon/PCNErrorMon  #properties = 52
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'doLog':True
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'excludePileup':True
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'TELL1s':[  ]
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'ErrorBankLocation':Raw/Velo/VeloErrorBank
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'RawEventLocation':DAQ/RawEvent
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'AutoStringIDPurgeMap':{ '/' : '=SLASH=' }
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'UseSequencialNumericAutoIDs':False
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'HeaderFor1DHistoTable':|   Title                                       |    #    |     Mean   |    RMS     |  Skewness  |  Kurtosis  |
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'ShortFormatFor1DHistoTable': | %1$-25.25s %2%
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'FormatFor1DHistoTable':| %2$-45.45s | %3$=7d |%8$11.5g | %10$-11.5g|%12$11.5g |%14$11.5g |
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'MonitorHistograms':True
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'FullDetail':False
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'HistoDir':PCNErrorMon
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'HistoTopDir':Velo/
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'HistoOffSet':0
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'HistoSplitDir':False
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'HistoCheckForNaN':True
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'HistoCountersPrint':True
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'HistoPrint':False
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'HistoProduce':True
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'RequireObjects':[  ]
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'VetoObjects':[  ]
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'StatEntityList':[  ]
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'CounterList':[ '.*' ]
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'UseEfficiencyRowFormat':True
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'EfficiencyRowFormat': |*%|-48.48s|%|50t||%|10d| |%|11.5g| |(%|#9.6g| +- %|-#9.6g|)%%|   -------   |   -------   |
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'RegularRowFormat': | %|-48.48s|%|50t||%|10d| |%|11.7g| |%|#11.5g| |%|#11.5g| |%|#12.5g| |%|#12.5g| |
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'StatTableHeader': |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'GlobalTimeOffset':0.0000000
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'RootOnTES':
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'RootInTES':
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'Context':Offline
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'TypePrint':True
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'StatPrint':True
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'PropertiesPrint':True
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'ErrorsPrint':True
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'RegisterForContextService':True
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'MonitorService':MonitorSvc
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'AuditStop':True
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'AuditStart':True
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'AuditEndRun':True
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'AuditBeginRun':True
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'AuditFinalize':True
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'AuditExecute':True
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'AuditRestart':True
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'AuditReinitialize':True
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'AuditInitialize':True
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'AuditAlgorithms':True
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'ErrorCounter':0
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'ErrorMax':1
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'Enable':True
+PCNErrorMon       SUCCESS Property ['Name': Value] =  'OutputLevel':3
+PCNErrorMon          INFO Total TELL1s: 88
+Output               INFO Member list: , with context 'Offline'
+IODataManager       ERROR Referring to existing dataset file:/daqarea/lhcb/data/2015/RAW/CALIB/LHCb/COLLISION15/165527/165527_0000000041.raw by its physical name.
+IODataManager       ERROR You may not be able to navigate back to the input file -- processing continues
+EventSelector        INFO Stream:EventSelector.DataStreamTool_1 Def:DATAFILE='file:/daqarea/lhcb/data/2015/RAW/CALIB/LHCb/COLLISION15/165527/165527_0000000041.raw' SVC='LHCb::MDFSelector'
+ApplicationMgr       INFO Application Manager Initialized successfully
+ApplicationMgr       INFO Application Manager Started successfully
+EventSelector.D...   INFO Compression:0 Checksum:1
+EventSelector     SUCCESS Reading Event record 1. Record number within stream 1: 1
+EventPersistenc...   INFO Added successfully Conversion service:LHCb::RawDataCnvSvc
+CALIBOFF             INFO Connected to database "sqlite_file:/cvmfs/lhcb.cern.ch/lib/lhcb/SQLite/SQLDDDB/db/CALIBOFF.db/CALIBOFF"
+CALIBOFF             INFO Using TAG ""
+ONLINE_2015          INFO Connected to database "sqlite_file:/cvmfs/lhcb.cern.ch/lib/lhcb/SQLite/SQLDDDB/db/ONLINE-2015.db/ONLINE"
+ONLINE_2015          INFO Using TAG ""
+MagneticFieldSvc     INFO Map scaled by factor 1 with polarity internally used: -1 signed relative current: -1
+ToolSvc.PatTTMa...   INFO Start generation of VeloTT Bdl LUTs
+ToolSvc.PatTTMa...   INFO Generation of VeloTT Bdl LUTs finished
+ToolSvc.PatTTMa...   INFO Start generation of VeloTT deflection LUTs
+ToolSvc.PatTTMa...   INFO Generation of VeloTT deflection LUTs finished
+SmartVeloErrorB...   INFO SmartVeloErrorBankDecoder::  --> No error bank detected - skipping to the next event 
+ChronoStatSvc        INFO  Number of skipped events for MemStat-1
+PrintODINBank        INFO *********ODIN BANK CONTENT***************
+PrintODINBank        INFO Run number        : 165527
+PrintODINBank        INFO Event number        : 1240217510
+PrintODINBank        INFO Orbit ID          : 18086578
+PrintODINBank        INFO Bunch ID          : 1073
+PrintODINBank        INFO GPS time          : 1444618246376576
+PrintODINBank        INFO Event type        : 136
+PrintODINBank        INFO Odin version      : 6
+PrintODINBank        INFO Detector Status   : 262144
+PrintODINBank        INFO Bunch current     : 0
+PrintODINBank        INFO Error bits        : 0
+PrintODINBank        INFO Read-out type     : ZeroSuppressed
+PrintODINBank        INFO Trigger type      : AuxiliaryTrigger
+PrintODINBank        INFO *****************************************
+SmartVeloErrorB...   INFO SmartVeloErrorBankDecoder::  --> No error bank detected - skipping to the next event 
+SmartVeloErrorB...   INFO SmartVeloErrorBankDecoder::  --> No error bank detected - skipping to the next event 
+SmartVeloErrorB...   INFO SmartVeloErrorBankDecoder::  --> No error bank detected - skipping to the next event 
+SmartVeloErrorB...   INFO SmartVeloErrorBankDecoder::  --> No error bank detected - skipping to the next event 
+SmartVeloErrorB...   INFO SmartVeloErrorBankDecoder::  --> No error bank detected - skipping to the next event 
+SmartVeloErrorB...   INFO SmartVeloErrorBankDecoder::  --> No error bank detected - skipping to the next event 
+SmartVeloErrorB...   INFO SmartVeloErrorBankDecoder::  --> No error bank detected - skipping to the next event 
+SmartVeloErrorB...   INFO SmartVeloErrorBankDecoder::  --> No error bank detected - skipping to the next event 
+SmartVeloErrorB...   INFO SmartVeloErrorBankDecoder:: The INFO message is suppressed : ' --> No error bank detected - skipping to the next event '
+VetraInit            INFO Memory has changed from 1398328 to 1450036 KB (51708KB, 3.69784%) in last 100 events
+VetraInit            INFO Memory has increased from 1398328 to 1450036  KB (+3.56598%) in last 100 events
+EventSelector     SUCCESS Reading Event record 101. Record number within stream 1: 101
+EventSelector     SUCCESS Reading Event record 201. Record number within stream 1: 201
+EventSelector     SUCCESS Reading Event record 301. Record number within stream 1: 301
+EventSelector     SUCCESS Reading Event record 401. Record number within stream 1: 401
+EventSelector     SUCCESS Reading Event record 501. Record number within stream 1: 501
+EventSelector     SUCCESS Reading Event record 601. Record number within stream 1: 601
+EventSelector     SUCCESS Reading Event record 701. Record number within stream 1: 701
+EventSelector     SUCCESS Reading Event record 801. Record number within stream 1: 801
+EventSelector     SUCCESS Reading Event record 901. Record number within stream 1: 901
+EventSelector     SUCCESS Reading Event record 1001. Record number within stream 1: 1001
+EventSelector     SUCCESS Reading Event record 1101. Record number within stream 1: 1101
+EventSelector     SUCCESS Reading Event record 1201. Record number within stream 1: 1201
+EventSelector     SUCCESS Reading Event record 1301. Record number within stream 1: 1301
+EventSelector     SUCCESS Reading Event record 1401. Record number within stream 1: 1401
+EventSelector     SUCCESS Reading Event record 1501. Record number within stream 1: 1501
+EventSelector.D...   INFO Cannot read more data  (Header). End-of-File reached.
+IODataManager       ERROR Referring to existing dataset file:/daqarea/lhcb/data/2015/RAW/CALIB/LHCb/COLLISION15/165527/165527_0000000047.raw by its physical name.
+IODataManager       ERROR You may not be able to navigate back to the input file -- processing continues
+EventSelector        INFO Stream:EventSelector.DataStreamTool_2 Def:DATAFILE='file:/daqarea/lhcb/data/2015/RAW/CALIB/LHCb/COLLISION15/165527/165527_0000000047.raw' SVC='LHCb::MDFSelector'
+EventSelector.D...   INFO Compression:0 Checksum:1
+EventSelector     SUCCESS Reading Event record 1601. Record number within stream 2: 20
+EventSelector     SUCCESS Reading Event record 1701. Record number within stream 2: 120
+EventSelector     SUCCESS Reading Event record 1801. Record number within stream 2: 220
+EventSelector     SUCCESS Reading Event record 1901. Record number within stream 2: 320
+EventSelector     SUCCESS Reading Event record 2001. Record number within stream 2: 420
+EventSelector     SUCCESS Reading Event record 2101. Record number within stream 2: 520
+EventSelector     SUCCESS Reading Event record 2201. Record number within stream 2: 620
+EventSelector     SUCCESS Reading Event record 2301. Record number within stream 2: 720
+EventSelector     SUCCESS Reading Event record 2401. Record number within stream 2: 820
+EventSelector     SUCCESS Reading Event record 2501. Record number within stream 2: 920
+EventSelector     SUCCESS Reading Event record 2601. Record number within stream 2: 1020
+EventSelector     SUCCESS Reading Event record 2701. Record number within stream 2: 1120
+EventSelector     SUCCESS Reading Event record 2801. Record number within stream 2: 1220
+EventSelector     SUCCESS Reading Event record 2901. Record number within stream 2: 1320
+EventSelector     SUCCESS Reading Event record 3001. Record number within stream 2: 1420
+EventSelector     SUCCESS Reading Event record 3101. Record number within stream 2: 1520
+EventSelector.D...   INFO Cannot read more data  (Header). End-of-File reached.
+IODataManager       ERROR Referring to existing dataset file:/daqarea/lhcb/data/2015/RAW/CALIB/LHCb/COLLISION15/165527/165527_0000000052.raw by its physical name.
+IODataManager       ERROR You may not be able to navigate back to the input file -- processing continues
+EventSelector        INFO Stream:EventSelector.DataStreamTool_3 Def:DATAFILE='file:/daqarea/lhcb/data/2015/RAW/CALIB/LHCb/COLLISION15/165527/165527_0000000052.raw' SVC='LHCb::MDFSelector'
+EventSelector.D...   INFO Compression:0 Checksum:1
+EventSelector     SUCCESS Reading Event record 3201. Record number within stream 3: 47
+EventSelector     SUCCESS Reading Event record 3301. Record number within stream 3: 147
+EventSelector     SUCCESS Reading Event record 3401. Record number within stream 3: 247
+EventSelector     SUCCESS Reading Event record 3501. Record number within stream 3: 347
+EventSelector     SUCCESS Reading Event record 3601. Record number within stream 3: 447
+EventSelector     SUCCESS Reading Event record 3701. Record number within stream 3: 547
+EventSelector     SUCCESS Reading Event record 3801. Record number within stream 3: 647
+EventSelector     SUCCESS Reading Event record 3901. Record number within stream 3: 747
+EventSelector     SUCCESS Reading Event record 4001. Record number within stream 3: 847
+EventSelector     SUCCESS Reading Event record 4101. Record number within stream 3: 947
+EventSelector     SUCCESS Reading Event record 4201. Record number within stream 3: 1047
+EventSelector     SUCCESS Reading Event record 4301. Record number within stream 3: 1147
+EventSelector     SUCCESS Reading Event record 4401. Record number within stream 3: 1247
+EventSelector     SUCCESS Reading Event record 4501. Record number within stream 3: 1347
+EventSelector     SUCCESS Reading Event record 4601. Record number within stream 3: 1447
+ONLINE_2012.Tim...   INFO Disconnect from database after being idle for 120s (will reconnect if needed)
+VetraInit            INFO Memory has changed from 1450036 to 1515572 KB (65536KB, 4.51961%) in last 100 events
+VetraInit            INFO Memory has increased from 1450036 to 1515572  KB (+4.32418%) in last 100 events
+EventSelector     SUCCESS Reading Event record 4701. Record number within stream 3: 1547
+EventSelector.D...   INFO Cannot read more data  (Header). End-of-File reached.
+IODataManager       ERROR Referring to existing dataset file:/daqarea/lhcb/data/2015/RAW/CALIB/LHCb/COLLISION15/165527/165527_0000000048.raw by its physical name.
+IODataManager       ERROR You may not be able to navigate back to the input file -- processing continues
+EventSelector        INFO Stream:EventSelector.DataStreamTool_4 Def:DATAFILE='file:/daqarea/lhcb/data/2015/RAW/CALIB/LHCb/COLLISION15/165527/165527_0000000048.raw' SVC='LHCb::MDFSelector'
+EventSelector.D...   INFO Compression:0 Checksum:1
+EventSelector     SUCCESS Reading Event record 4801. Record number within stream 4: 52
+EventSelector     SUCCESS Reading Event record 4901. Record number within stream 4: 152
+EventSelector     SUCCESS Reading Event record 5001. Record number within stream 4: 252
+EventSelector     SUCCESS Reading Event record 5101. Record number within stream 4: 352
+VetraInit            INFO Memory has changed from 1515572 to 1524216 KB (8644KB, 0.570346%) in last 100 events
+VetraInit            INFO Memory has increased from 1515572 to 1524216  KB (+0.567111%) in last 100 events
+EventSelector     SUCCESS Reading Event record 5201. Record number within stream 4: 452
+EventSelector     SUCCESS Reading Event record 5301. Record number within stream 4: 552
+EventSelector     SUCCESS Reading Event record 5401. Record number within stream 4: 652
+EventSelector     SUCCESS Reading Event record 5501. Record number within stream 4: 752
+EventSelector     SUCCESS Reading Event record 5601. Record number within stream 4: 852
+EventSelector     SUCCESS Reading Event record 5701. Record number within stream 4: 952
+EventSelector     SUCCESS Reading Event record 5801. Record number within stream 4: 1052
+CALIBOFF.TimeOu...   INFO Disconnect from database after being idle for 120s (will reconnect if needed)
+ONLINE_2015.Tim...   INFO Disconnect from database after being idle for 120s (will reconnect if needed)
+VetraInit            INFO Memory has changed from 1524216 to 1655288 KB (131072KB, 8.59931%) in last 100 events
+VetraInit            INFO Memory has increased from 1524216 to 1655288  KB (+7.91838%) in last 100 events
+EventSelector     SUCCESS Reading Event record 5901. Record number within stream 4: 1152
+EventSelector     SUCCESS Reading Event record 6001. Record number within stream 4: 1252
+EventSelector     SUCCESS Reading Event record 6101. Record number within stream 4: 1352
+EventSelector     SUCCESS Reading Event record 6201. Record number within stream 4: 1452
+LHCBCOND.TimeOu...   INFO Disconnect from database after being idle for 120s (will reconnect if needed)
+VetraInit            INFO Memory has changed from 1655288 to 1720824 KB (65536KB, 3.95919%) in last 100 events
+VetraInit            INFO Memory has increased from 1655288 to 1720824  KB (+3.80841%) in last 100 events
+EventSelector     SUCCESS Reading Event record 6301. Record number within stream 4: 1552
+EventSelector.D...   INFO Cannot read more data  (Header). End-of-File reached.
+IODataManager       ERROR Referring to existing dataset file:/daqarea/lhcb/data/2015/RAW/CALIB/LHCb/COLLISION15/165527/165527_0000000008.raw by its physical name.
+IODataManager       ERROR You may not be able to navigate back to the input file -- processing continues
+EventSelector        INFO Stream:EventSelector.DataStreamTool_5 Def:DATAFILE='file:/daqarea/lhcb/data/2015/RAW/CALIB/LHCb/COLLISION15/165527/165527_0000000008.raw' SVC='LHCb::MDFSelector'
+EventSelector.D...   INFO Compression:0 Checksum:1
+EventSelector     SUCCESS Reading Event record 6401. Record number within stream 5: 68
+EventSelector     SUCCESS Reading Event record 6501. Record number within stream 5: 168
+EventSelector     SUCCESS Reading Event record 6601. Record number within stream 5: 268
+EventSelector     SUCCESS Reading Event record 6701. Record number within stream 5: 368
+EventSelector     SUCCESS Reading Event record 6801. Record number within stream 5: 468
+EventSelector     SUCCESS Reading Event record 6901. Record number within stream 5: 568
+EventSelector     SUCCESS Reading Event record 7001. Record number within stream 5: 668
+EventSelector     SUCCESS Reading Event record 7101. Record number within stream 5: 768
+EventSelector     SUCCESS Reading Event record 7201. Record number within stream 5: 868
+EventSelector     SUCCESS Reading Event record 7301. Record number within stream 5: 968
+EventSelector     SUCCESS Reading Event record 7401. Record number within stream 5: 1068
+EventSelector     SUCCESS Reading Event record 7501. Record number within stream 5: 1168
+EventSelector     SUCCESS Reading Event record 7601. Record number within stream 5: 1268
+EventSelector     SUCCESS Reading Event record 7701. Record number within stream 5: 1368
+EventSelector     SUCCESS Reading Event record 7801. Record number within stream 5: 1468
+EventSelector     SUCCESS Reading Event record 7901. Record number within stream 5: 1568
+EventSelector.D...   INFO Cannot read more data  (Header). End-of-File reached.
+IODataManager       ERROR Referring to existing dataset file:/daqarea/lhcb/data/2015/RAW/CALIB/LHCb/COLLISION15/165527/165527_0000000012.raw by its physical name.
+IODataManager       ERROR You may not be able to navigate back to the input file -- processing continues
+EventSelector        INFO Stream:EventSelector.DataStreamTool_6 Def:DATAFILE='file:/daqarea/lhcb/data/2015/RAW/CALIB/LHCb/COLLISION15/165527/165527_0000000012.raw' SVC='LHCb::MDFSelector'
+EventSelector.D...   INFO Compression:0 Checksum:1
+EventSelector     SUCCESS Reading Event record 8001. Record number within stream 6: 79
+EventSelector     SUCCESS Reading Event record 8101. Record number within stream 6: 179
+EventSelector     SUCCESS Reading Event record 8201. Record number within stream 6: 279
+EventSelector     SUCCESS Reading Event record 8301. Record number within stream 6: 379
+EventSelector     SUCCESS Reading Event record 8401. Record number within stream 6: 479
+EventSelector     SUCCESS Reading Event record 8501. Record number within stream 6: 579
+EventSelector     SUCCESS Reading Event record 8601. Record number within stream 6: 679
+EventSelector     SUCCESS Reading Event record 8701. Record number within stream 6: 779
+EventSelector     SUCCESS Reading Event record 8801. Record number within stream 6: 879
+EventSelector     SUCCESS Reading Event record 8901. Record number within stream 6: 979
+VELOCOND.TimeOu...   INFO Disconnect from database after being idle for 120s (will reconnect if needed)
+DDDB.TimeOutChe...   INFO Disconnect from database after being idle for 120s (will reconnect if needed)
+VetraInit            INFO Memory has changed from 1720824 to 1851896 KB (131072KB, 7.61682%) in last 100 events
+VetraInit            INFO Memory has increased from 1720824 to 1851896  KB (+7.07772%) in last 100 events
+EventSelector     SUCCESS Reading Event record 9001. Record number within stream 6: 1079
+EventSelector     SUCCESS Reading Event record 9101. Record number within stream 6: 1179
+EventSelector     SUCCESS Reading Event record 9201. Record number within stream 6: 1279
+EventSelector     SUCCESS Reading Event record 9301. Record number within stream 6: 1379
+EventSelector     SUCCESS Reading Event record 9401. Record number within stream 6: 1479
+EventSelector     SUCCESS Reading Event record 9501. Record number within stream 6: 1579
+EventSelector.D...   INFO Cannot read more data  (Header). End-of-File reached.
+IODataManager       ERROR Referring to existing dataset file:/daqarea/lhcb/data/2015/RAW/CALIB/LHCb/COLLISION15/165527/165527_0000000007.raw by its physical name.
+IODataManager       ERROR You may not be able to navigate back to the input file -- processing continues
+EventSelector        INFO Stream:EventSelector.DataStreamTool_7 Def:DATAFILE='file:/daqarea/lhcb/data/2015/RAW/CALIB/LHCb/COLLISION15/165527/165527_0000000007.raw' SVC='LHCb::MDFSelector'
+EventSelector.D...   INFO Compression:0 Checksum:1
+EventSelector     SUCCESS Reading Event record 9601. Record number within stream 7: 97
+EventSelector     SUCCESS Reading Event record 9701. Record number within stream 7: 197
+EventSelector     SUCCESS Reading Event record 9801. Record number within stream 7: 297
+EventSelector     SUCCESS Reading Event record 9901. Record number within stream 7: 397
+EventSelector     SUCCESS Reading Event record 10001. Record number within stream 7: 497
+EventSelector     SUCCESS Reading Event record 10101. Record number within stream 7: 597
+EventSelector     SUCCESS Reading Event record 10201. Record number within stream 7: 697
+EventSelector     SUCCESS Reading Event record 10301. Record number within stream 7: 797
+EventSelector     SUCCESS Reading Event record 10401. Record number within stream 7: 897
+EventSelector     SUCCESS Reading Event record 10501. Record number within stream 7: 997
+EventSelector     SUCCESS Reading Event record 10601. Record number within stream 7: 1097
+EventSelector     SUCCESS Reading Event record 10701. Record number within stream 7: 1197
+EventSelector     SUCCESS Reading Event record 10801. Record number within stream 7: 1297
+EventSelector     SUCCESS Reading Event record 10901. Record number within stream 7: 1397
+EventSelector     SUCCESS Reading Event record 11001. Record number within stream 7: 1497
+EventSelector.D...   INFO Cannot read more data  (Header). End-of-File reached.
+IODataManager       ERROR Referring to existing dataset file:/daqarea/lhcb/data/2015/RAW/CALIB/LHCb/COLLISION15/165527/165527_0000000037.raw by its physical name.
+IODataManager       ERROR You may not be able to navigate back to the input file -- processing continues
+EventSelector        INFO Stream:EventSelector.DataStreamTool_8 Def:DATAFILE='file:/daqarea/lhcb/data/2015/RAW/CALIB/LHCb/COLLISION15/165527/165527_0000000037.raw' SVC='LHCb::MDFSelector'
+EventSelector.D...   INFO Compression:0 Checksum:1
+EventSelector     SUCCESS Reading Event record 11101. Record number within stream 8: 3
+EventSelector     SUCCESS Reading Event record 11201. Record number within stream 8: 103
+EventSelector     SUCCESS Reading Event record 11301. Record number within stream 8: 203
+EventSelector     SUCCESS Reading Event record 11401. Record number within stream 8: 303
+EventSelector     SUCCESS Reading Event record 11501. Record number within stream 8: 403
+EventSelector     SUCCESS Reading Event record 11601. Record number within stream 8: 503
+EventSelector     SUCCESS Reading Event record 11701. Record number within stream 8: 603
+EventSelector     SUCCESS Reading Event record 11801. Record number within stream 8: 703
+EventSelector     SUCCESS Reading Event record 11901. Record number within stream 8: 803
+EventSelector     SUCCESS Reading Event record 12001. Record number within stream 8: 903
+EventSelector     SUCCESS Reading Event record 12101. Record number within stream 8: 1003
+EventSelector     SUCCESS Reading Event record 12201. Record number within stream 8: 1103
+EventSelector     SUCCESS Reading Event record 12301. Record number within stream 8: 1203
+EventSelector     SUCCESS Reading Event record 12401. Record number within stream 8: 1303
+EventSelector     SUCCESS Reading Event record 12501. Record number within stream 8: 1403
+EventSelector     SUCCESS Reading Event record 12601. Record number within stream 8: 1503
+EventSelector.D...   INFO Cannot read more data  (Header). End-of-File reached.
+IODataManager       ERROR Referring to existing dataset file:/daqarea/lhcb/data/2015/RAW/CALIB/LHCb/COLLISION15/165527/165527_0000000038.raw by its physical name.
+IODataManager       ERROR You may not be able to navigate back to the input file -- processing continues
+EventSelector        INFO Stream:EventSelector.DataStreamTool_9 Def:DATAFILE='file:/daqarea/lhcb/data/2015/RAW/CALIB/LHCb/COLLISION15/165527/165527_0000000038.raw' SVC='LHCb::MDFSelector'
+EventSelector.D...   INFO Compression:0 Checksum:1
+EventSelector     SUCCESS Reading Event record 12701. Record number within stream 9: 29
+EventSelector     SUCCESS Reading Event record 12801. Record number within stream 9: 129
+EventSelector     SUCCESS Reading Event record 12901. Record number within stream 9: 229
+EventSelector     SUCCESS Reading Event record 13001. Record number within stream 9: 329
+EventSelector     SUCCESS Reading Event record 13101. Record number within stream 9: 429
+EventSelector     SUCCESS Reading Event record 13201. Record number within stream 9: 529
+EventSelector     SUCCESS Reading Event record 13301. Record number within stream 9: 629
+EventSelector     SUCCESS Reading Event record 13401. Record number within stream 9: 729
+EventSelector     SUCCESS Reading Event record 13501. Record number within stream 9: 829
+EventSelector     SUCCESS Reading Event record 13601. Record number within stream 9: 929
+EventSelector     SUCCESS Reading Event record 13701. Record number within stream 9: 1029
+EventSelector     SUCCESS Reading Event record 13801. Record number within stream 9: 1129
+EventSelector     SUCCESS Reading Event record 13901. Record number within stream 9: 1229
+EventSelector     SUCCESS Reading Event record 14001. Record number within stream 9: 1329
+EventSelector     SUCCESS Reading Event record 14101. Record number within stream 9: 1429
+EventSelector     SUCCESS Reading Event record 14201. Record number within stream 9: 1529
+EventSelector.D...   INFO Cannot read more data  (Header). End-of-File reached.
+IODataManager       ERROR Referring to existing dataset file:/daqarea/lhcb/data/2015/RAW/CALIB/LHCb/COLLISION15/165527/165527_0000000022.raw by its physical name.
+IODataManager       ERROR You may not be able to navigate back to the input file -- processing continues
+EventSelector        INFO Stream:EventSelector.DataStreamTool_10 Def:DATAFILE='file:/daqarea/lhcb/data/2015/RAW/CALIB/LHCb/COLLISION15/165527/165527_0000000022.raw' SVC='LHCb::MDFSelector'
+EventSelector.D...   INFO Compression:0 Checksum:1
+EventSelector     SUCCESS Reading Event record 14301. Record number within stream 10: 49
+EventSelector     SUCCESS Reading Event record 14401. Record number within stream 10: 149
+EventSelector     SUCCESS Reading Event record 14501. Record number within stream 10: 249
+EventSelector     SUCCESS Reading Event record 14601. Record number within stream 10: 349
+EventSelector     SUCCESS Reading Event record 14701. Record number within stream 10: 449
+EventSelector     SUCCESS Reading Event record 14801. Record number within stream 10: 549
+EventSelector     SUCCESS Reading Event record 14901. Record number within stream 10: 649
+EventSelector     SUCCESS Reading Event record 15001. Record number within stream 10: 749
+EventSelector     SUCCESS Reading Event record 15101. Record number within stream 10: 849
+EventSelector     SUCCESS Reading Event record 15201. Record number within stream 10: 949
+EventSelector     SUCCESS Reading Event record 15301. Record number within stream 10: 1049
+EventSelector     SUCCESS Reading Event record 15401. Record number within stream 10: 1149
+EventSelector     SUCCESS Reading Event record 15501. Record number within stream 10: 1249
+EventSelector     SUCCESS Reading Event record 15601. Record number within stream 10: 1349
+EventSelector     SUCCESS Reading Event record 15701. Record number within stream 10: 1449
+EventSelector     SUCCESS Reading Event record 15801. Record number within stream 10: 1549
+EventSelector.D...   INFO Cannot read more data  (Header). End-of-File reached.
+IODataManager       ERROR Referring to existing dataset file:/daqarea/lhcb/data/2015/RAW/CALIB/LHCb/COLLISION15/165527/165527_0000000024.raw by its physical name.
+IODataManager       ERROR You may not be able to navigate back to the input file -- processing continues
+EventSelector        INFO Stream:EventSelector.DataStreamTool_11 Def:DATAFILE='file:/daqarea/lhcb/data/2015/RAW/CALIB/LHCb/COLLISION15/165527/165527_0000000024.raw' SVC='LHCb::MDFSelector'
+EventSelector.D...   INFO Compression:0 Checksum:1
+EventSelector     SUCCESS Reading Event record 15901. Record number within stream 11: 67
+EventSelector     SUCCESS Reading Event record 16001. Record number within stream 11: 167
+EventSelector     SUCCESS Reading Event record 16101. Record number within stream 11: 267
+EventSelector     SUCCESS Reading Event record 16201. Record number within stream 11: 367
+EventSelector     SUCCESS Reading Event record 16301. Record number within stream 11: 467
+EventSelector     SUCCESS Reading Event record 16401. Record number within stream 11: 567
+EventSelector     SUCCESS Reading Event record 16501. Record number within stream 11: 667
+EventSelector     SUCCESS Reading Event record 16601. Record number within stream 11: 767
+EventSelector     SUCCESS Reading Event record 16701. Record number within stream 11: 867
+EventSelector     SUCCESS Reading Event record 16801. Record number within stream 11: 967
+EventSelector     SUCCESS Reading Event record 16901. Record number within stream 11: 1067
+EventSelector     SUCCESS Reading Event record 17001. Record number within stream 11: 1167
+EventSelector     SUCCESS Reading Event record 17101. Record number within stream 11: 1267
+VELOCOND.DataBa...   INFO Connecting to database
+DDDB.DataBaseOp...   INFO Connecting to database
+EventSelector     SUCCESS Reading Event record 17201. Record number within stream 11: 1367
+EventSelector     SUCCESS Reading Event record 17301. Record number within stream 11: 1467
+EventSelector     SUCCESS Reading Event record 17401. Record number within stream 11: 1567
+EventSelector.D...   INFO Cannot read more data  (Header). End-of-File reached.
+IODataManager       ERROR Referring to existing dataset file:/daqarea/lhcb/data/2015/RAW/CALIB/LHCb/COLLISION15/165527/165527_0000000031.raw by its physical name.
+IODataManager       ERROR You may not be able to navigate back to the input file -- processing continues
+EventSelector        INFO Stream:EventSelector.DataStreamTool_12 Def:DATAFILE='file:/daqarea/lhcb/data/2015/RAW/CALIB/LHCb/COLLISION15/165527/165527_0000000031.raw' SVC='LHCb::MDFSelector'
+EventSelector.D...   INFO Compression:0 Checksum:1
+EventSelector     SUCCESS Reading Event record 17501. Record number within stream 12: 85
+EventSelector     SUCCESS Reading Event record 17601. Record number within stream 12: 185
+EventSelector     SUCCESS Reading Event record 17701. Record number within stream 12: 285
+EventSelector     SUCCESS Reading Event record 17801. Record number within stream 12: 385
+EventSelector     SUCCESS Reading Event record 17901. Record number within stream 12: 485
+EventSelector     SUCCESS Reading Event record 18001. Record number within stream 12: 585
+EventSelector     SUCCESS Reading Event record 18101. Record number within stream 12: 685
+EventSelector     SUCCESS Reading Event record 18201. Record number within stream 12: 785
+EventSelector     SUCCESS Reading Event record 18301. Record number within stream 12: 885
+EventSelector     SUCCESS Reading Event record 18401. Record number within stream 12: 985
+EventSelector     SUCCESS Reading Event record 18501. Record number within stream 12: 1085
+EventSelector     SUCCESS Reading Event record 18601. Record number within stream 12: 1185
+EventSelector     SUCCESS Reading Event record 18701. Record number within stream 12: 1285
+EventSelector     SUCCESS Reading Event record 18801. Record number within stream 12: 1385
+EventSelector     SUCCESS Reading Event record 18901. Record number within stream 12: 1485
+EventSelector.D...   INFO Cannot read more data  (Header). End-of-File reached.
+IODataManager       ERROR Referring to existing dataset file:/daqarea/lhcb/data/2015/RAW/CALIB/LHCb/COLLISION15/165527/165527_0000000001.raw by its physical name.
+IODataManager       ERROR You may not be able to navigate back to the input file -- processing continues
+EventSelector        INFO Stream:EventSelector.DataStreamTool_13 Def:DATAFILE='file:/daqarea/lhcb/data/2015/RAW/CALIB/LHCb/COLLISION15/165527/165527_0000000001.raw' SVC='LHCb::MDFSelector'
+EventSelector.D...   INFO Compression:0 Checksum:1
+EventSelector     SUCCESS Reading Event record 19001. Record number within stream 13: 7
+EventSelector     SUCCESS Reading Event record 19101. Record number within stream 13: 107
+EventSelector     SUCCESS Reading Event record 19201. Record number within stream 13: 207
+EventSelector     SUCCESS Reading Event record 19301. Record number within stream 13: 307
+EventSelector     SUCCESS Reading Event record 19401. Record number within stream 13: 407
+EventSelector     SUCCESS Reading Event record 19501. Record number within stream 13: 507
+EventSelector     SUCCESS Reading Event record 19601. Record number within stream 13: 607
+EventSelector     SUCCESS Reading Event record 19701. Record number within stream 13: 707
+EventSelector     SUCCESS Reading Event record 19801. Record number within stream 13: 807
+EventSelector     SUCCESS Reading Event record 19901. Record number within stream 13: 907
+ApplicationMgr       INFO Application Manager Stopped successfully
+VetraInit         SUCCESS ==================================================================
+VetraInit         SUCCESS 20000 events processed
+VetraInit         SUCCESS ==================================================================
+VetraInit         SUCCESS Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "Events"                                        |     20000 |      20000 |     1.0000 |     0.0000 |      1.0000 |      1.0000 |
+nzsStreamListener    INFO  ============================================================= 
+nzsStreamListener    INFO  +++++++ NZS Stream Summary Info ++++++++ 
+nzsStreamListener    INFO  ============================================================= 
+nzsStreamListener    INFO  -->  Number of processed events seen by the emulator: 20000
+nzsStreamListener    INFO  --> NZS data banks present in the data 
+nzsStreamListener    INFO  Bank id: 0 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 1 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 2 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 3 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 4 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 5 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 6 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 7 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 8 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 9 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 10 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 11 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 12 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 13 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 14 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 15 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 16 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 17 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 18 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 19 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 20 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 21 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 22 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 23 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 24 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 25 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 26 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 27 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 28 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 29 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 30 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 31 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 32 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 33 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 34 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 35 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 36 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 37 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 38 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 39 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 40 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 41 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 64 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 65 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 66 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 67 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 68 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 69 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 70 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 71 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 72 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 73 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 74 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 75 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 76 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 77 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 78 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 79 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 80 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 81 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 82 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 83 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 84 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 85 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 86 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 87 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 88 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 89 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 90 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 91 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 92 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 93 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 94 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 95 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 96 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 97 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 98 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 99 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 100 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 101 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 102 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 103 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 104 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 105 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 128 detected: 0 time(s) 
+nzsStreamListener    INFO  Bank id: 129 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 130 detected: 9439 time(s) 
+nzsStreamListener    INFO  Bank id: 131 detected: 9439 time(s) 
+nzsStreamListener    INFO  ============================================================= 
+FilterBeamBeam    SUCCESS Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ |*"#passed"                                       |     20000 |       6558 |(  32.7900 +- 0.331950 )%|   -------   |   -------   |
+TrackBestTrackC...   INFO   Fitting performance   :   100.00 %
+TrackBestTrackC...SUCCESS Number of counters : 10
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "BadInput"                                      |    224765 |          0 |     0.0000 |     0.0000 |      0.0000 |      0.0000 |
+ | "FitFailed"                                     |    224765 |          0 |     0.0000 |     0.0000 |      0.0000 |      0.0000 |
+ | "Velo.badChisq"                                 |    164316 |      15147 |   0.092182 |    0.28928 |      0.0000 |      1.0000 |
+ | "Velo.chisqprobSum"                             |    164316 |   75371.23 |    0.45870 |    0.34850 |      0.0000 |      1.0000 |
+ | "Velo.flipCharge"                               |    164316 |          0 |     0.0000 |     0.0000 |      0.0000 |      0.0000 |
+ | "Velo.numOutliers"                              |    164316 |      67023 |    0.40789 |    0.65765 |      0.0000 |      2.0000 |
+ | "VeloBackward.badChisq"                         |     60449 |       4842 |   0.080101 |    0.27145 |      0.0000 |      1.0000 |
+ | "VeloBackward.chisqprobSum"                     |     60449 |   26203.72 |    0.43348 |    0.32801 |      0.0000 |     0.99999 |
+ | "VeloBackward.flipCharge"                       |     60449 |          0 |     0.0000 |     0.0000 |      0.0000 |      0.0000 |
+ | "VeloBackward.numOutliers"                      |     60449 |      16198 |    0.26796 |    0.53441 |      0.0000 |      2.0000 |
+TrackV0Finder     SUCCESS Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "numselected"                                   |      3899 |          0 |     0.0000 |     0.0000 |      0.0000 |      0.0000 |
+TrackV0Finder     SUCCESS Exceptions/Errors/Warnings/Infos Statistics : 0/0/1/0
+TrackV0Finder     SUCCESS  #WARNINGS   = 2659     Message = 'No primary verticesfound. Skip V0 search'
+VELOCOND.TimeOu...   INFO Disconnect from database after being idle for 120s (will reconnect if needed)
+DDDB.TimeOutChe...   INFO Disconnect from database after being idle for 120s (will reconnect if needed)
+VeloPrivateClus...SUCCESS Booked 194 Histogram(s) : 1D=191 2D=3 
+VeloPrivateClus...SUCCESS Number of counters : 2
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "# VeloClusters"                                |      6558 |    4079065 |     622.00 |     740.66 |      0.0000 |      5135.0 |
+ | "# events"                                      |      6558 |       6558 |     1.0000 |     0.0000 |      1.0000 |      1.0000 |
+ErrorMon          SUCCESS Booked 10 Histogram(s) : 1D=3 2D=7 
+PCNErrorMon          INFO 6558 processed!
+PCNErrorMon          INFO Found 0 FEM PCNs out of sync!
+PCNErrorMon          INFO Found 0 Beetle PCNs out of sync!
+PCNErrorMon          INFO 
+PCNErrorMon          INFO |  Run # |   Event ID | TELL1 | Exp PCN | Exp bits | bad bits |
+PCNErrorMon          INFO |--------+------------+-------+---------+----------+----------|
+PCNErrorMon          INFO 
+PCNErrorMon          INFO 
+PCNErrorMon          INFO |  Run # |   Event ID | TELL1 | Exp PCN | Beetle | Exp bits | bad bits |
+PCNErrorMon          INFO |--------+------------+-------+---------+--------+----------+----------|
+PCNErrorMon          INFO 
+PCNErrorMon       SUCCESS Booked 1410 Histogram(s) : 1D=1 2D=1409 
+EventLoopMgr         INFO Histograms converted successfully according to request.
+LoKiSvc           SUCCESS 
+
+
+Good Bye Good Bye Good Bye Good Bye Good Bye Good Bye Good Bye Good Bye Good Bye Good Bye Good Bye Good
+Good Bye Good Bye Good Bye Good Bye Good Bye Good Bye Good Bye Good Bye Good Bye Good Bye Good Bye Good
+LoKi                                                                                               LoKi 
+LoKi                                                                                               LoKi 
+LoKi                                       Good Bye from LoKi!                                     LoKi 
+LoKi                                                                                               LoKi 
+LoKi                                      (LOops & KInematics)                                     LoKi 
+LoKi                                                                                               LoKi 
+LoKi                         Smart & Friendly C++ Physics Analysis Tool Kit                        LoKi 
+LoKi                                                                                               LoKi 
+LoKi                                                                                               LoKi 
+LoKi                      LoKi mailing list ('LoKi-club') : lhcb-loki@cern.ch                      LoKi 
+LoKi      Comments, suggestions, criticism, ideas, questions and requests are *ALWAYS* welcome     LoKi 
+LoKi                                                                                               LoKi 
+Good Bye Good Bye Good Bye Good Bye Good Bye Good Bye Good Bye Good Bye Good Bye Good Bye Good Bye Good
+Good Bye Good Bye Good Bye Good Bye Good Bye Good Bye Good Bye Good Bye Good Bye Good Bye Good Bye Good
+
+
+
+TransportSvc      SUCCESS  GEOMETRY ERRORS: 'Skip'     map has the size 1
+   |                      Logical Volume                     |    |  #          mean             RMS          min              max    |
+   | BeforeMagnetRegion/Velo/lvVelo                          | mm | 13      -3.07603            1.4046694 -5.6271801        -0.473105 |
+   | BeforeMagnetRegion/Velo/lvVelo                          | X0 | 13      -0.21426991        0.09784638 -0.39197778      -0.0329555 |
+
+TransportSvc      SUCCESS  GEOMETRY ERRORS: 'Recover'  map has the size 5
+   |                      Logical Volume                     |    |  #          mean             RMS          min              max    |
+   | BeforeMagnetRegion/Velo/RFBox/lvRFBoxLeft               | mm | 2       0.162387          0.059400592 0.10298641         0.221787 |
+   | BeforeMagnetRegion/Velo/RFBox/lvRFBoxLeft               | X0 | 2       0                           0 0                           |
+   | BeforeMagnetRegion/Velo/RFBox/lvRFBoxRight              | mm | 2       0.15285175         0.02006953 0.13278222         0.172921 |
+   | BeforeMagnetRegion/Velo/RFBox/lvRFBoxRight              | X0 | 2       0                           0 0                           |
+   | BeforeMagnetRegion/Velo/RFFoil/lvRFFoil                 | mm | 731     0.00033781528   0.00014530455 1.3492424e-07   0.000499426 |
+   | BeforeMagnetRegion/Velo/RFFoil/lvRFFoil                 | X0 | 731     0                           0 0                           |
+   | BeforeMagnetRegion/Velo/lvVelo                          | mm | 60      3.4656542           4.5237058 0.011221263         14.2459 |
+   | BeforeMagnetRegion/Velo/lvVelo                          | X0 | 60      0.20243769         0.26424118 0.00065546257      0.832140 |
+   | BeforeMagnetRegion/Velo/lvVeloLeft                      | mm | 1       7.7494643e-05   3.0939221e-13 7.7494643e-05   7.7494643e- |
+   | BeforeMagnetRegion/Velo/lvVeloLeft                      | X0 | 1       0                           0 0                           |
+
+TransportSvc      SUCCESS  GEOMETRY ERRORS: 'Codes'    map has the size 0
+
+TransportSvc         INFO Reset the static pointer to DetDesc::IGeometyrErrorSvc
+ToolSvc              INFO Removing all tools created by ToolSvc
+ToolSvc.TrackSt...SUCCESS Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "Number of tracks seen"                         |     20001 |          0 |     0.0000 |     0.0000 |      0.0000 |      0.0000 |
+ToolSvc.HltFactorySUCCESS Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "# loaded from PYTHON"                          |         1 |          1 |     1.0000 |     0.0000 |      1.0000 |      1.0000 |
+VetraInit.Vetra...SUCCESS Booked 4 Histogram(s) : 1D=4 
+VetraInit.Vetra...SUCCESS Number of counters : 2
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "Delta Memory/MB"                               |     19990 |    405.972 |   0.020309 |     1.6070 |     -65.536 |      131.07 |
+ | "Total Memory/MB"                               |     20000 |3.434118e+07 |     1717.1 |     170.23 |      1398.3 |      1851.9 |
+VetraInit.Vetra...SUCCESS Exceptions/Errors/Warnings/Infos Statistics : 0/0/2/0
+VetraInit.Vetra...SUCCESS  #WARNINGS   = 6        Message = 'Delta Memory for the event exceeds 3*sigma'
+VetraInit.Vetra...SUCCESS  #WARNINGS   = 1359     Message = 'Total Memory for the event exceeds 3*sigma'
+ToolSvc.Sequenc...   INFO --------------------------------------------------------------------------------------------------
+ToolSvc.Sequenc...   INFO This machine has a speed about   2.40 times the speed of a 2.8 GHz Xeon.
+ToolSvc.Sequenc...   INFO Algorithm          (millisec) |    <user> |   <clock> |      min       max | entries | total (s) |
+ToolSvc.Sequenc...   INFO --------------------------------------------------------------------------------------------------
+ToolSvc.Sequenc...   INFO --------------------------------------------------------------------------------------------------
+ToolSvc.TrackVe...SUCCESS Number of counters : 1
+ |    Counter                                      |     #     |    sum     | mean/eff^* | rms/err^*  |     min     |     max     |
+ | "Number of tracks seen"                         |     20001 |          0 |     0.0000 |     0.0000 |      0.0000 |      0.0000 |
+ToolSvc.FastVel...   INFO Maximum number of Velo hits 5022
+ToolSvc.OTChann...SUCCESS Exceptions/Errors/Warnings/Infos Statistics : 0/0/1/0
+ToolSvc.OTChann...SUCCESS  #WARNINGS   = 1        Message = 'Updating OT channel map for bank version 3'
+TIMER.TIMER          INFO --------------------------------------------------------------------------------------------------
+TIMER.TIMER          INFO This machine has a speed about   2.40 times the speed of a 2.8 GHz Xeon.
+TIMER.TIMER          INFO Algorithm          (millisec) |    <user> |   <clock> |      min       max | entries | total (s) |
+TIMER.TIMER          INFO --------------------------------------------------------------------------------------------------
+TIMER.TIMER          INFO EVENT LOOP                    |    17.701 |    17.848 |    0.232   29604.7 |   20000 |   356.970 |
+TIMER.TIMER          INFO  VetraSequencer               |    17.107 |    17.240 |    0.114   29603.9 |   20000 |   344.805 |
+TIMER.TIMER          INFO   Init                        |     0.167 |     0.173 |    0.108      11.2 |   20000 |     3.464 |
+TIMER.TIMER          INFO    VetraInit                  |     0.102 |     0.107 |    0.070      11.1 |   20000 |     2.141 |
+TIMER.TIMER          INFO    nzsStreamListener          |     0.059 |     0.062 |    0.034      10.9 |   20000 |     1.237 |
+TIMER.TIMER          INFO   FilterBeamBeam              |     0.005 |     0.006 |    0.003       1.1 |   20000 |     0.130 |
+TIMER.TIMER          INFO   TELL1Processing             |     0.769 |     0.799 |    0.060      54.2 |    6558 |     5.243 |
+TIMER.TIMER          INFO    TELL1ProcessingVELOSeq     |     0.767 |     0.797 |    0.059      54.2 |    6558 |     5.227 |
+TIMER.TIMER          INFO     Decoding_ZS               |     0.750 |     0.777 |    0.046      53.6 |    6558 |     5.096 |
+TIMER.TIMER          INFO      DecodeToVeloClusters     |     0.746 |     0.774 |    0.043      53.5 |    6558 |     5.075 |
+TIMER.TIMER          INFO     Decoding_EB               |     0.015 |     0.016 |    0.010       0.6 |    6558 |     0.108 |
+TIMER.TIMER          INFO      SmartVeloErrorBankDecoder|     0.013 |     0.014 |    0.008       0.6 |    6558 |     0.089 |
+TIMER.TIMER          INFO   Reco                        |    47.370 |    47.722 |    0.113   29590.7 |    6558 |   312.960 |
+TIMER.TIMER          INFO    RecoVELOSeq                |     1.184 |     1.212 |    0.025      68.7 |    6558 |     7.946 |
+TIMER.TIMER          INFO     FastVeloTracking          |     1.180 |     1.208 |    0.023      68.7 |    6558 |     7.925 |
+TIMER.TIMER          INFO    RecoTrSeq                  |    45.621 |    45.944 |    0.057   29562.0 |    6558 |   301.302 |
+TIMER.TIMER          INFO     Track                     |    45.618 |    45.941 |    0.055   29562.0 |    6558 |   301.283 |
+TIMER.TIMER          INFO      TrackFitSeq              |    30.583 |    30.867 |    0.013   29458.1 |    6558 |   202.425 |
+TIMER.TIMER          INFO       TrackBestTrackCreator   |    30.578 |    30.863 |    0.011   29458.1 |    6558 |   202.396 |
+TIMER.TIMER          INFO      TrackAddExtraInfoSeq     |    15.009 |    15.051 |    0.035     195.3 |    6558 |    98.702 |
+TIMER.TIMER          INFO       TrackClonesSeq          |     1.776 |     1.778 |    0.027      58.4 |    6558 |    11.657 |
+TIMER.TIMER          INFO        FindTrackClones        |     1.752 |     1.753 |    0.018      58.3 |    6558 |    11.499 |
+TIMER.TIMER          INFO        FlagTrackClones        |     0.019 |     0.019 |    0.006       1.1 |    6558 |     0.127 |
+TIMER.TIMER          INFO       TrackAddLikelihood      |     0.925 |     0.935 |    0.002      67.8 |    6558 |     6.132 |
+TIMER.TIMER          INFO       TrackAddNNGhostId       |    12.299 |    12.331 |    0.001     128.3 |    6558 |    80.865 |
+TIMER.TIMER          INFO      TrackEraseExtraInformatio|     0.016 |     0.016 |    0.003       0.2 |    6558 |     0.102 |
+TIMER.TIMER          INFO       TrackEraseExtraInfo     |     0.014 |     0.013 |    0.001       0.2 |    6558 |     0.085 |
+TIMER.TIMER          INFO    RecoVertexSeq              |     0.556 |     0.561 |    0.025      23.5 |    6558 |     3.676 |
+TIMER.TIMER          INFO     PatPVOffline              |     0.535 |     0.537 |    0.012      23.4 |    6558 |     3.524 |
+TIMER.TIMER          INFO     TrackV0Finder             |     0.015 |     0.018 |    0.009       0.2 |    6558 |     0.121 |
+TIMER.TIMER          INFO   Moni                        |     3.489 |     3.492 |    0.083      26.8 |    6558 |    22.900 |
+TIMER.TIMER          INFO    MoniVELOSeq                |     3.487 |     3.490 |    0.083      26.8 |    6558 |    22.885 |
+TIMER.TIMER          INFO     Moni_Odin                 |     0.004 |     0.004 |    0.002       0.4 |    6558 |     0.029 |
+TIMER.TIMER          INFO      PrintODINBank            |     0.002 |     0.002 |    0.001       0.4 |    6558 |     0.013 |
+TIMER.TIMER          INFO     Moni_Clusters             |     3.337 |     3.340 |    0.011      26.5 |    6558 |    21.903 |
+TIMER.TIMER          INFO      VeloPrivateClusterMonitor|     3.333 |     3.337 |    0.009      26.5 |    6558 |    21.881 |
+TIMER.TIMER          INFO     Moni_EB                   |     0.139 |     0.141 |    0.065       7.2 |    6558 |     0.924 |
+TIMER.TIMER          INFO      ErrorMon                 |     0.080 |     0.083 |    0.040       5.2 |    6558 |     0.547 |
+TIMER.TIMER          INFO      PCNErrorMon              |     0.053 |     0.053 |    0.021       2.1 |    6558 |     0.345 |
+TIMER.TIMER          INFO   Output                      |     0.002 |     0.001 |    0.001       0.0 |    6558 |     0.009 |
+TIMER.TIMER          INFO --------------------------------------------------------------------------------------------------
+*****Chrono*****     INFO ****************************************************************************************************
+*****Chrono*****     INFO  The Final CPU consumption ( Chrono ) Table (ordered)
+*****Chrono*****     INFO ****************************************************************************************************
+DetailedMateria...   INFO Time User   : Tot=  166  [s] Ave/Min/Max=0.731(+- 58.8)/    0/2.79e+04 [ms] #=226373
+ChronoStatSvc        INFO Time User   : Tot=  465  [s]                                             #=  1
+*****Chrono*****     INFO ****************************************************************************************************
+ChronoStatSvc.f...   INFO  Service finalized successfully 
+ApplicationMgr       INFO Application Manager Finalized successfully
+ApplicationMgr       INFO Application Manager Terminated successfully

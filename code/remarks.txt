@@ -1,0 +1,15 @@
+UWAGI DO PROJEKTU - STAN Z 19.07
+
+(1) Wagi atrybutów nie da się ustalić za pomocą metryki (ustalonej przez współczynniki w odległości, np. r2=w1*(mu1-mu2)^2 + w2*(sig1-sig2)^2...), bo
+wówczas atrybut o małej wadze będzie jakby przybliżał nam punkt, czyli będzie dawał złudzenie, że 2 punkty są bardziej podobne (niż dla metryki [1,1,1,1]). Nie chcemy, aby waga zaniżała / zawyżała podobieństwa punktów, tylko aby regulowała ważność atrybutów. Wydaje się to skomplikowane, więc proponuję potraktować wszystkie wzięte atrybuty jednakowo, a pobawić się ich liczbą - tzn. w jednej próbie weźmy jedynie średnią i dyspersję, w innej wszystkie 4 atrybuty, etc. i porównajmy wyniki.
+To będzie ciekawa obserwacja do sprawozdania.
+
+(2) Można pobawić się sposobem obliczania odległości 'euklidean', 'minkowski', 'mahalanobis' i porównać wyniki (wszystko inne (liczba atrybutów) bez zmian). Kolejne wnioski do sprawka ;-)
+
+(3) W uczeniu nadzorowanym lepiej jest dostarczać rzeczywiście złe próbki (a nie udawane złe próbki) - wtedy mamy pewność, że algorytm będzie na nie wyczulony oraz, że postawi granicę dobry/zły we właściwym miejscu.
+Zgadując odpowiedź złego jesteśmy trochę nierzetelni. Pytanie - gdzie jest "granica między dobrem, a złem" xD
+
+(4) Usunąłem martwy kod (np. funkcje jedynie z 'pass' i stare komentarze) i poprawiłem czytelność kodu + dokumentacja. Czasem się wpieprzałem zmieniając subtelnie kod :P [nie żebym uważał mój kod za dużo lepszy; po prostu miewam nerwicę natręstw xD]
+
+(5) Proszę, abyśmy pisali wszystko w kodzie (komentarze, nazwy zmiennych) i sprawku po angielsku. Brzydko jest mieszać, a rozpoczęliśmy już sprawko po ang. Zaoszczędzi to czasu, bo nie trzeba będzie tłumaczyć, jak coś weźmiemy do finalnej wersji projektu.
+

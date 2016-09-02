@@ -1,0 +1,15 @@
+Issues:
+(1) Pod przyciskiem "Plots" dostępne są stare ploty (lub przynajmniej data jest stara, nie wiem). Po wykonaniu analizy, mimo że tworzą się ploty w .../fig/Analyse/ to w GUI można je zobaczyć dopiero po ponownym włączeniu programu (chyba, że to tylko data wprowadza w błąd?)
+
+(2) Fajnie, jakby przy analizie KNN program sprawdzał, czy ta nie została już wykonana. (Np. czy są już ploty i pliki log dotyczące tego co chcemy... Czyli, czy dla każdego pliku z fake-danymi istnieją odpowiednie pliki log i ploty)
+Podobnie dla generowanych fake-plików (choć to trwa bardzo krótko, więc nie jest ważne).
+
+(3) Brak niezależnego zaburzania parametrów. Tzn., w tej chwili możemy zaburzyć wszystkie 4 parametry w ten sposób, aby trafiały w przedział np. 1.2--1.5 wartości średniej. Fajnie by było zobaczyć, jak działa algorytm jeśli zaburzymy np. tylko jeden z parametrów.
+Proponuję rozwiązanie z takim front-endem:
+-----MIN | MAX
+par1 xxx   yyy
+par2 vvv   www
+par3...
+par4...
+
+Oczywiście back-end wymaga subtelnych zmian w __init__.py -> PageSix.generate()

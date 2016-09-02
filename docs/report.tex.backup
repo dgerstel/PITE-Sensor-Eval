@@ -1,0 +1,46 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage{amsmath} 
+% \usepackage[T1]{fontenc}
+\usepackage{graphicx}
+%\documentclass{article}
+%\usepackage[showframe]{geometry}
+\usepackage{layout}
+\usepackage[margin=1.5in]{geometry}
+%\usepackage{multirow}
+\usepackage{hhline} %for double hlines
+\usepackage{booktabs} %for all professional-looking table characterictics ;-)
+\usepackage{float}
+\restylefloat{table}
+\floatstyle{plaintop}
+\usepackage[tableposition=top]{caption}
+\renewcommand{\arraystretch}{1.5}
+
+\usepackage{subcaption}
+\usepackage{listings}
+\lstset{language=Python}
+% Title Page
+\title{\textbf{Python in the enterprise} \\ First lab report}
+\author{Dream team no. xxxx}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+===Milestone "0"===
+
+Dziś spotkaliśmy się z drem.
+
+
+1. Pierwszym krokiem będzie selekcja interesujących nas przykładowych danych. W tym celu wspólnie z Michałem przeglądniemy archiwum danych na serwerze w CERN-ie (zdaje się, że tylko my mamy tam konta...) i zdecydujemy co jest warte uwagi, (a następnie umieścimy te dane w miejscu dostępnym dla wszystkich.)
+
+2. W kolejnym kroku należało będzie wyekstrahować z "suchych" danych odpowiednie parametry (jest to tzw. preprocessing). 
+Chodzi o to, żeby każdy sensor / kanał odczytu miał konkretne parametry {x1, x2, ..., xn}, aby dało się zastosować machine learning (algortym KNN). Ponieważ raw-data są w plikach *.root, a ja już się bawiłem z tym środowiskiem, to ja zajmę się tym etapem.
+
+3. Algorytm KNN. Mając parametryzację {x_i} oraz informację, czy dany sensor jest "dobry", czy "zły" można wytrenować nasz algorytm i potem, jak Pan dr przygotuje specjalnie spreparowane "złe" próbki -- przetestujemy, czy nasze KNN działa.
+
+Ponadto, okazało się, że zamiast typowej klasyfikacji binarnej (dobry vs zły) fajnie, jakby nasz algorytm zwracał prawdopodobieństwo, że sensor jest dobry (powiedzmy wartość zwracana Z jest z przedziału [0, 100], jeśli  Z >= 50 -> sensor dobry, gdy Z < 50 -> zły).
+Tak więc, jest to regresja, nie klasyfikacja (albo, "klasyfikacja rozmyta", jak to dr określił).
+
+\end{document}          
