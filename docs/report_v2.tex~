@@ -158,33 +158,32 @@ paremeters obained from measurement data by showing histograms of average, RMS, 
 and 2 (avarege and skewness) there are some significant differences between results.
 \begin{figure}[H] \centering
     \includegraphics[width=.8\textwidth]{../fig/app_shots/average}
-    \caption{Average parameter histogram.}
+    \caption{Application GUI after choosing \texttt{Run model} from the initial window.}
 \end{figure}
 \begin{figure}[H] \centering
     \includegraphics[width=.8\textwidth]{../fig/app_shots/skewness}
-    \caption{Skewness parameter histogram.}
+    \caption{Application GUI after choosing \texttt{Run model} from the initial window.}
 \end{figure}
-This may signal that some sensors should be checked. Second type of analysis is a comparison with benchmark sensor (picture 3).
+ This may signal that some sensors should be checked. Second
+type of analysis is a comparison with benchmark sensor (picture 3).
 \begin{figure}[H] \centering
     \includegraphics[width=.8\textwidth]{../fig/app_shots/quality}
-    \caption{Comparison to benchmark sensor.}
+    \caption{Application GUI after choosing \texttt{Run model} from the initial window.}
 \end{figure}
 At this point it is important to decide whether some bad quality sensors shouldn't be
-deleted from model as they may cause mistakes in KNN algorithm. The last type of analysis is scoring which give us probability of correct
+deleted from model as they may cause mistakes in KNN algorithm. The last type of analysis is scoring which give us probabilty of correct
 data classification.
 
 \section{Summary}
-\textit{Python in the enterprise}, as the name suggests, is a subject oriented on utilising Python as a tool for delivering a product of, usually, a team enterprise, whether for business or scientific purposes. The latter motivation characterised this project. Its completion let us develop both --  hard and soft skills. Apart from practising and reviewing the programming language itself, the following traits of team work we would like to emphasise.
-First of all, we had to come up with clear division of responsibilities and organisation of working time. Team work made us realise how important reliable code documentation and control of project progress is.
-Additionally we understood purpose of using revision control system, like in our case $git$. Some functions in our code were written, at least in part,
-by all of us. Thanks to that we could compare the way we think, observe and compare various programming styles and learn something new.
-
-As far as hard skills are concerned, we had a chance to get to know basics of Machine Learning in Python. Particularly well we familiarised ourselves with k nearest neighbours algorithm
-and \texttt{KNeighborsClassifier} class from scikit-learn module. To understand classification based on KNN we had to read thoroughly documentation of the class
-and learn its methods and attributes.
-
-
-Finally, we managed to complete all the plans and built models that help distinguish low and high quality silicon sensors based on their noise analysis and machine learning, what is an evidence of our good work organisation.
+The project let us develop as well soft as hard skills. Python In The Enterprise, as the name suggest, is a subject which should enforce us 
+to think about Python as a tool in business. Because of that we were working in teams, what required us to make clear division of responsibilities.
+and organisation of working time. Group work made us realize how important is reliable code documentation and control of project progress.
+Addiionally we understood purpose of using revision control system, like SVN or GIT. Some functions in our code were written, at least in part,
+by all of us. Thanks to that we could compare the way we think, observe new programming style and learn something new.
+What is more, we had a chance to get to know basics of Machine Learning in Python. Particularly well we familirazed ourselfes with KNN algorithm
+and KNeghborsClassifier class from scikit-learn module. To understand classification based on KNN we had to read thoroughly documentation of class
+and master its methods and attributes.
+Finally, we managed to complete all plans what is evidence of good work organisation.
 
 
 \appendix
@@ -195,7 +194,7 @@ Finally, we managed to complete all the plans and built models that help disting
     \caption{Application GUI after start}
 \end{figure}
 
-After starting the application with invoking \texttt{python \_\_init\_\_.py} from the directory \texttt{.../code} and clicking \texttt{Start} button the above screen pops up.
+After starting the application with invoking \texttt{python \_\_init\_\_.py} from the directory \texttt{.../code} the above screen pops up.
 \begin{itemize}
     \item \texttt{Run model} -- Enables to run KNN classification of all data from \texttt{.../data} directory; it also allows to generate simulated data.
     \item \texttt{Print sensor data to console} - Displays content of sensor data file with all its parameters and class label.

@@ -27,7 +27,7 @@
 \captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
 % \lstset{frame=lrb,xleftmargin=\fboxsep,xrightmargin=-\fboxsep}
 
-% \lstset{language=Python, showspaces=false, showstringspaces=false, numbers=None, breaklines=true}
+\lstset{language=Python, showspaces=false, showstringspaces=false, numbers=None, breaklines=true}
 
 \usepackage{epigraph}
 
@@ -46,7 +46,7 @@
 \section{Introduction}
 
 The goal was to implement software for classifying silicon sensors as either good or bad ones. The k-nearest neighbours algorithm was to be used to assess a sensor's response 
-based upon a few attributes in the so-called feature space. These, in turn, were to be obtained in a preprocessing from sensor's response histograms in the ROOT framework.
+based upon a few attributes in the so-called feature space. These, in turn, were to be obtained in a preprocessing from sensor's response histograms in the ROOT framework. This report summarises the project functionality, evolution, methodology used and results obtained.
 
 \section{Managing the project}
 At the beginning, the tasks were assigned to the authors of this report as follows:
@@ -60,13 +60,19 @@ Choosing specific ML algorithm & all \\
 Histograming the measurements in the feature space & Dawid G. \\
 Extracting feature space attributes from the histograms & Dawid G. \\
 ML algorithm implementation & Michał Ł. \& Konrad Z. \\
-Testing accuracy of the algorithm & Marcin L. \\
-Results analysis and deciding about further plans & all \\
+Testing accuracy of the algorithm & all \\
+Implementing graphical user interface & Marcin L. \\
+Results analysis & all \\
+Functionality testing and suggesting improvements & all
 \bottomrule
 \end{tabular}
 \caption{Summary of the tasks assigned to the team members at the project's start}
 \label{t:tasks}
 \end{table}
+
+
+Naturally, the team did not strictly respect the above task division as oftentimes authors asked and helped each other rather spontaneously.
+The team used git repository at \url{https://github.com/dgerstel/PITEml}.
 
 \section{Project overview (evolution and dataflow)}
 
@@ -75,17 +81,6 @@ The input data come from the real silicon sensors of the LHCb's Vertex Locator. 
 that scanned over the ROOT file, extracted the 2-dimensional distributions and projected them onto y-axis building 1-dimensional sensor noise distributions that are irrespective of its channels. Fig. \ref{f:1D} shows an exemplary such plot.
 Both types of histograms are saved in \texttt{.../fig/control\_plots/}.
 
-
-Then, from these distributions four parameters were extracted, namely: mean, rms, skewness and kurtosis. These comprised the attributes for a machine learning algorithm. For any supervised learning it is mandatory to provide an adequate class label. We decided to approach classification as binary (either good or bad) with a perspective to develop a continuous and probabilistic classification to either category later on (if at all).
-The resulting data are stored in \texttt{.../data/sensorData.dat}.
-
-
-After a brief analysis by eye we agreed that all 42 sensors are acceptable and we attributed them class '1' (good).
-
-
-Next, because we were supplied with only good sensors -- we had to simulate response of low-quality ones by shifting attributes of the 'good' ones. It is done by a function in \texttt{FakeData.py} ...
-The simulated low-quality sensor results can be generated ...
-are stored in files with prefix \texttt{.../data/danefake*}.
 
 \begin{figure}[H]
     \centering
@@ -101,6 +96,17 @@ are stored in files with prefix \texttt{.../data/danefake*}.
     \label{f:1D}
 \end{figure}
 
+
+Then, from these distributions four parameters were extracted, namely: mean, rms, skewness and kurtosis. These comprised the attributes for a machine learning algorithm. For any supervised learning it is mandatory to provide an adequate class label. We decided to approach classification as binary (either good or bad) with a perspective to develop a continuous and probabilistic classification to either category later on (if at all).
+The resulting data are stored in \texttt{.../data/sensorData.dat}.
+
+
+After a brief analysis by eye we agreed that all 42 sensors are acceptable and we attributed them class '1' (good).
+
+
+Next, because we were supplied with only good sensors -- we had to simulate response of low-quality ones by shifting attributes of the 'good' ones. It is done by a function in \texttt{FakeData.py} ...
+The simulated low-quality sensor results can be generated ...
+are stored in files with prefix \texttt{.../data/danefake*}.
 
 Then, we implemented k-nearest neighbours classifier (\texttt{.../code/Classifier.py}), taught the algorithm using the real sensor and simulated samples and, finally, we tested the classification accuracy. To this end, we used k-fold cross-validation described in the next section.
 
@@ -147,8 +153,38 @@ The scikit-learn library for cross-validation provides class named \texttt{cross
 \end{itemize}
 
 \section{Analysis}
+The tool which we have created, helps us run three independent from each other analysis about sensors' quality. First one tell us something about
+paremeters obained from measurement data by showing histograms of average, RMS, kurtosis and skewness parameters. As we can see in the picture 1
+and 2 (avarege and skewness) there are some significant differences between results.
+\begin{figure}[H] \centering
+    \includegraphics[width=.8\textwidth]{../fig/app_shots/average}
+    \caption{Average parameter histogram.}
+\end{figure}
+\begin{figure}[H] \centering
+    \includegraphics[width=.8\textwidth]{../fig/app_shots/skewness}
+    \caption{Skewness parameter histogram.}
+\end{figure}
+This may signal that some sensors should be checked. Second type of analysis is a comparison with benchmark sensor (picture 3).
+\begin{figure}[H] \centering
+    \includegraphics[width=.8\textwidth]{../fig/app_shots/quality}
+    \caption{Comparison to benchmark sensor.}
+\end{figure}
+At this point it is important to decide whether some bad quality sensors shouldn't be
+deleted from model as they may cause mistakes in KNN algorithm. The last type of analysis is scoring which give us probability of correct
+data classification.
 
 \section{Summary}
+$Python in the enterprise$, as the name suggests, is a subject oriented on utilising Python as a tool for delivering a product of, usually, a team enterprise, whether for business or scientific purposes. The latter motivation characterised this project. Its completion let us develop both --  hard and soft skills. Apart from practising and reviewing the programming language itself, the following traits of team work we would like to emphasise.
+First of all, we had to come up with clear division of responsibilities and organisation of working time. Team work made us realise how important reliable code documentation and control of project progress is.
+Additionally we understood purpose of using revision control system, like in our case $git$. Some functions in our code were written, at least in part,
+by all of us. Thanks to that we could compare the way we think, observe and compare various programming styles and learn something new.
+
+As far as hard skills are concerned, we had a chance to get to know basics of Machine Learning in Python. Particularly well we familiarised ourselves with k nearest neighbours algorithm
+and \texttt{KNeighborsClassifier} class from scikit-learn module. To understand classification based on KNN we had to read thoroughly documentation of the class
+and learn its methods and attributes.
+
+
+Finally, we managed to complete all the plans what is an evidence of good work organisation. We built models that help distinguish low and high quality silicon sensors based on their noise analysis and machine learning.
 
 
 \appendix
@@ -159,7 +195,7 @@ The scikit-learn library for cross-validation provides class named \texttt{cross
     \caption{Application GUI after start}
 \end{figure}
 
-After starting the application with invoking \texttt{python \_\_init\_\_.py} from the directory \texttt{.../code} the above screen pops up.
+After starting the application with invoking \texttt{python \_\_init\_\_.py} from the directory \texttt{.../code} and clicking \texttt{Start} button the above screen pops up.
 \begin{itemize}
     \item \texttt{Run model} -- Enables to run KNN classification of all data from \texttt{.../data} directory; it also allows to generate simulated data.
     \item \texttt{Print sensor data to console} - Displays content of sensor data file with all its parameters and class label.
