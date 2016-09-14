@@ -72,9 +72,9 @@ Functionality testing and suggesting improvements & all
 
 
 Naturally, the team did not strictly respect the above task division as oftentimes authors asked and helped each other rather spontaneously.
-The team used git repository at \url{https://github.com/dgerstel/PITEml}.
+The team used git repository and the project is accessible at \url{https://github.com/dgerstel/PITE-Sensor-Eval}.
 
-\section{Project overview (evolution and dataflow)}
+\section{Project overview -- its evolution and dataflow}
 
 The input data come from the real silicon sensors of the LHCb's Vertex Locator. There are 42 sensors in total and each one has 2048 channels at which noise (with pedestal subtracted) had been observed producing 2-dimensional histograms as in the Fig. \ref{f:2D}. We had been supplied with these data
 \newline (\texttt{.../data/165526/VELODQM\_165526\_2015-10-12\_18.05.29\_NZS.root}) before the project started. Then, we created a ROOT macro \texttt{.../code/preprocessData.C} 
@@ -105,8 +105,7 @@ After a brief analysis by eye we agreed that all 42 sensors are acceptable and w
 
 
 Next, because we were supplied with only good sensors -- we had to simulate response of low-quality ones by shifting attributes of the 'good' ones. It is done by a function in \texttt{FakeData.py} ...
-The simulated low-quality sensor results can be generated ...
-are stored in files with prefix \texttt{.../data/danefake*}.
+The simulated low-quality sensor results are stored in files with prefix \texttt{.../data/danefake*}.
 
 Then, we implemented k-nearest neighbours classifier (\texttt{.../code/Classifier.py}), taught the algorithm using the real sensor and simulated samples and, finally, we tested the classification accuracy. To this end, we used k-fold cross-validation described in the next section.
 
@@ -130,17 +129,17 @@ a general internal model, but simply stores instances of the training data. Clas
 
 In this small project we used only a few of them:
 \begin{itemize}
-    \item \texttt{n\_neighbors} is the number of nearest neighbors which should be taken under consideration,
-    \item \texttt{weights} parameter has two choices: ‘uniform‘ and ‘distance‘. For the ‘uniform‘ weight, each of the k neighbors has equal vote whatever its distance from the target point is. 'distance' weight points by the inverse of their distance. \texttt{weight} may also be a user defined function,
-    \item \texttt{algorithm} parameter lets user to choose which algorithm should be used to compute the nearest neighbors; 'auto' means that class will attempt to decide the most appropriate one itself.
+    \item \texttt{n\_neighbors} is the number of nearest neighbors which should be taken under consideration;
+    \item \texttt{weights} parameter has two choices: ‘uniform‘ and ‘distance‘. For the ‘uniform‘ weight, each of the k neighbours has equal vote whatever its distance from the target point is. 'distance' weights points by the inverse of their distance. \texttt{weight} may also be a user defined function;
+    \item \texttt{algorithm} parameter lets user to choose which algorithm should be used to compute the nearest neighbours; 'auto' means that class will attempt to decide the most appropriate one itself;
     \item \texttt{metric} decides how distances are calculated in parametric space. A general formulation of distance metric is ‘minkowski’ distance.
 \end{itemize}
 
 
 \texttt{KNeighborsClassifier} methods used in this project:
 \begin{itemize}
-    \item \texttt{KNeighborsClassifier.fit(X,y)} fits the model using \texttt{X} as training data and \texttt{y} as target values, where \texttt{X} is an array-like object,
-    \item \texttt{KNeighborsClassifier.predict(X)} predicts the class labels for the provided data, where \texttt{X} is an array-like object,
+    \item \texttt{KNeighborsClassifier.fit(X,y)} fits the model using \texttt{X} as training data and \texttt{y} as target values, where \texttt{X} is an array-like object;
+    \item \texttt{KNeighborsClassifier.predict(X)} predicts the class labels for the provided data, where \texttt{X} is an array-like object;
     \item \texttt{KNeighborsClassifier.predict\_proba(X)} returns probability estimates for the test data \texttt{X}, where \texttt{X} is an array-like object.
 \end{itemize}    
     
@@ -153,25 +152,37 @@ The scikit-learn library for cross-validation provides class named \texttt{cross
 \end{itemize}
 
 \section{Analysis}
-The tool which we have created, helps us run three independent from each other analysis about sensors' quality. First one tell us something about
-paremeters obained from measurement data by showing histograms of average, RMS, kurtosis and skewness parameters. As we can see in the picture 1
-and 2 (avarege and skewness) there are some significant differences between results.
+% The tool which we have created, helps us run three independent from each other analysis about sensors' quality. First one tell us something about
+% paremeters obained from measurement data by showing histograms of average, RMS, kurtosis and skewness parameters. As we can see in the picture 1
+% and 2 (avarege and skewness) there are some significant differences between results.
+
+With the application there are two different types of analyses possible to perform. First of all, we may look at histograms of sensor's noise parameters, like for instance mean and skewness distributions that are depicted in Fig. \ref{f:mean} and Fig. \ref{f:ske}, respectively. The second type allows for evaluating knn algorithm output. Fig. \ref{f:ana} represents classification accuracy as a function of number of neighbours for sample split according to various train-to-test-ratios. This example shows that for splitting the sample into equal halves for training and test we obtained highest -- 100\% -- accuracy.
+
+
 \begin{figure}[H] \centering
     \includegraphics[width=.8\textwidth]{../fig/app_shots/average}
     \caption{Average parameter histogram.}
+    \label{f:mean}
 \end{figure}
 \begin{figure}[H] \centering
     \includegraphics[width=.8\textwidth]{../fig/app_shots/skewness}
     \caption{Skewness parameter histogram.}
+    \label{f:ske}
 \end{figure}
-This may signal that some sensors should be checked. Second type of analysis is a comparison with benchmark sensor (picture 3).
+
 \begin{figure}[H] \centering
-    \includegraphics[width=.8\textwidth]{../fig/app_shots/quality}
-    \caption{Comparison to benchmark sensor.}
+    \includegraphics[width=.8\textwidth]{../fig/analyse/example}
+    \caption{An exemplary analysis plot showing accuracy as a function of number of neighbours for various train-to-test ratios.}
 \end{figure}
-At this point it is important to decide whether some bad quality sensors shouldn't be
-deleted from model as they may cause mistakes in KNN algorithm. The last type of analysis is scoring which give us probability of correct
-data classification.
+% This may signal that some sensors should be checked. Second type of analysis is a comparison with benchmark sensor (picture 3).
+% \begin{figure}[H] \centering
+%     \includegraphics[width=.8\textwidth]{../fig/app_shots/quality}
+%     \caption{Comparison to benchmark sensor.}
+%     \label{f:ana}
+% \end{figure}
+% At this point it is important to decide whether some bad quality sensors shouldn't be
+% deleted from model as they may cause mistakes in KNN algorithm. The last type of analysis is scoring which give us probability of correct
+% data classification.
 
 \section{Summary}
 \textit{Python in the enterprise}, as the name suggests, is a subject oriented on utilising Python as a tool for delivering a product of, usually, a team enterprise, whether for business or scientific purposes. The latter motivation characterised this project. Its completion let us develop both --  hard and soft skills. Apart from practising and reviewing the programming language itself, the following traits of team work we would like to emphasise.
@@ -199,7 +210,7 @@ After starting the application with invoking \texttt{python \_\_init\_\_.py} fro
 \begin{itemize}
     \item \texttt{Run model} -- Enables to run KNN classification of all data from \texttt{.../data} directory; it also allows to generate simulated data.
     \item \texttt{Print sensor data to console} - Displays content of sensor data file with all its parameters and class label.
-    \item \texttt{print evaluation of sensors reliable to console} - 
+    \item \texttt{print evaluation of sensors reliable to console} - shows output in console and saves it to the log files.
     \item \texttt{Average/RMS/Skewness parameter histogram} - displays histograms of corresponding parameters of a real sensor.
     \item \texttt{Plots} - Contains analysis plots of accuracy as a function of number of neighbours for various parameter values.
 \end{itemize}

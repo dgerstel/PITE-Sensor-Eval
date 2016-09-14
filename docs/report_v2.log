@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.7.9)  12 SEP 2016 23:40
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.7.9)  14 SEP 2016 14:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -714,13 +714,19 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 ! Undefined control sequence.
-l.75 The team used git repository at \url
-                                         {https://github.com/dgerstel/PITEml}.
+l.75 ...tory and the project is accessible at \url
+                                                  {https://github.com/dgerst...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (44.83324pt too wide) in paragraph at lines 74--76
+\OT1/cmr/m/n/10 other rather spon-ta-neously. The team used git repos-i-tory an
+d the project is ac-ces-si-ble at https://github.com/dgerstel/PITE-
+ []
 
 
 <../fig/control_plots/sample_ADC_vs_chann.png, id=10, 504.38437pt x 338.76563pt
@@ -742,7 +748,7 @@ t line 94.
 ! Undefined control sequence.
 <argument> ...\z@ \footnotesep \ignorespaces \url 
                                                   {http://scikit-learn.org/s...
-l.122 ...te{\url{http://scikit-learn.org/stable/}}
+l.121 ...te{\url{http://scikit-learn.org/stable/}}
                                                   .
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -753,81 +759,88 @@ and I'll forget about whatever was undefined.
 [3 <../fig/control_plots/sample_ADC_vs_chann.png> <../fig/control_plots/sample_
 ADC_distr.png>]
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 124.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 127.
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 123.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 126.
 
  (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 127.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 126.
+
+
+LaTeX Warning: Reference `f:ana' on page 4 undefined on input line 159.
 
 <../fig/app_shots/average.png, id=21, 707.64375pt x 474.77374pt>
 File: ../fig/app_shots/average.png Graphic file (type png)
 
 <use ../fig/app_shots/average.png>
-Package pdftex.def Info: ../fig/app_shots/average.png used on input line 160.
+Package pdftex.def Info: ../fig/app_shots/average.png used on input line 163.
 (pdftex.def)             Requested size: 391.28378pt x 262.52454pt.
 
 <../fig/app_shots/skewness.png, id=22, 704.6325pt x 462.72874pt>
 File: ../fig/app_shots/skewness.png Graphic file (type png)
 
 <use ../fig/app_shots/skewness.png>
-Package pdftex.def Info: ../fig/app_shots/skewness.png used on input line 164.
+Package pdftex.def Info: ../fig/app_shots/skewness.png used on input line 168.
 (pdftex.def)             Requested size: 391.28378pt x 256.95164pt.
  [4]
-<../fig/app_shots/quality.png, id=31, 427.5975pt x 168.63pt>
-File: ../fig/app_shots/quality.png Graphic file (type png)
+<../fig/analyse/example.png, id=31, 578.16pt x 433.62pt>
+File: ../fig/analyse/example.png Graphic file (type png)
 
-<use ../fig/app_shots/quality.png>
-Package pdftex.def Info: ../fig/app_shots/quality.png used on input line 169.
-(pdftex.def)             Requested size: 391.28378pt x 154.30779pt.
+<use ../fig/analyse/example.png>
+Package pdftex.def Info: ../fig/analyse/example.png used on input line 174.
+(pdftex.def)             Requested size: 391.28378pt x 293.46161pt.
  [5 <../fig/app_shots/average.png> <../fig/app_shots/skewness.png>]
 <../fig/app_shots/start.png, id=35, 540.68666pt x 438.30417pt>
 File: ../fig/app_shots/start.png Graphic file (type png)
 
 <use ../fig/app_shots/start.png>
-Package pdftex.def Info: ../fig/app_shots/start.png used on input line 194.
+Package pdftex.def Info: ../fig/app_shots/start.png used on input line 205.
 (pdftex.def)             Requested size: 391.28378pt x 317.20393pt.
- [6 <../fig/app_shots/quality.png>]
-<../fig/app_shots/model.png, id=41, 542.025pt x 438.30417pt>
+ [6 <../fig/analyse/example.png>]
+<../fig/app_shots/model.png, id=42, 542.025pt x 438.30417pt>
 File: ../fig/app_shots/model.png Graphic file (type png)
 
 <use ../fig/app_shots/model.png>
-Package pdftex.def Info: ../fig/app_shots/model.png used on input line 208.
+Package pdftex.def Info: ../fig/app_shots/model.png used on input line 219.
 (pdftex.def)             Requested size: 391.28378pt x 316.42143pt.
  [7 <../fig/app_shots/start.png>]
-<../fig/app_shots/hist.png, id=47, 539.34833pt x 439.6425pt>
+<../fig/app_shots/hist.png, id=48, 539.34833pt x 439.6425pt>
 File: ../fig/app_shots/hist.png Graphic file (type png)
 
 <use ../fig/app_shots/hist.png>
-Package pdftex.def Info: ../fig/app_shots/hist.png used on input line 219.
+Package pdftex.def Info: ../fig/app_shots/hist.png used on input line 230.
 (pdftex.def)             Requested size: 391.28378pt x 318.95067pt.
  [8 <../fig/app_shots/model.png>] [9 <../fig/app_shots/hist.png>] (./report_v2.
-aux) ) 
+aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 6436 strings out of 494993
- 90004 string characters out of 6180622
+ 6440 strings out of 494993
+ 90033 string characters out of 6180622
  189573 words of memory out of 5000000
- 9552 multiletter control sequences out of 15000+600000
+ 9555 multiletter control sequences out of 15000+600000
  9537 words of font info for 35 fonts, out of 8000000 for 9000
  34 hyphenation exceptions out of 8191
- 38i,9n,40p,484b,1391s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.
-pfb>
-Output written on report_v2.pdf (9 pages, 1028427 bytes).
+ 38i,9n,40p,651b,1391s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti1
+0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+
+Output written on report_v2.pdf (9 pages, 1044629 bytes).
 PDF statistics:
- 95 PDF objects out of 1000 (max. 8388607)
+ 96 PDF objects out of 1000 (max. 8388607)
  59 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
